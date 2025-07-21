@@ -1,0 +1,25 @@
+@using Microsoft.AspNetCore.Identity
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="dropdown">
+        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown">
+            <i class="bi bi-person-circle"></i> Account
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" asp-controller="Account" asp-action="Profile">Profile</a></li>
+            <li><a class="dropdown-item" asp-controller="Transaction" asp-action="History">Transaction History</a></li>
+            <li><a class="dropdown-item" asp-controller="SellerDashboard" asp-action="Index">Seller Dashboard</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li>
+                <form asp-controller="Account" asp-action="Logout" method="post">
+                    <button type="submit" class="dropdown-item">Logout</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+}
+else
+{
+    <a class="btn btn-outline-light btn-sm me-2" asp-controller="Account" asp-action="Login">Login</a>
+    <a class="btn btn-light btn-sm" asp-controller="Account" asp-action="Register">Register</a>
+}

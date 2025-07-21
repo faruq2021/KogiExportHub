@@ -1,0 +1,215 @@
+@model KogiExportHub.Models.Miner
+@{
+    ViewData["Title"] = "Miner Details";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="fas fa-user"></i> Miner Details</h2>
+                <div>
+                    <a href="@Url.Action("Index")" class="btn btn-outline-secondary me-2">
+                        <i class="fas fa-arrow-left"></i> Back to List
+                    </a>
+                    <a href="@Url.Action("EditMiner", new { id = Model.Id })" class="btn btn-warning">
+                        <i class="fas fa-edit"></i> Edit Miner
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="row">
+        <!-- Miner Information -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="fas fa-id-card"></i> Personal Information</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><strong>License Number:</strong></td>
+                            <td>@Model.LicenseNumber</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Full Name:</strong></td>
+                            <td>@Model.FullName</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Phone Number:</strong></td>
+                            <td>@Model.PhoneNumber</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email:</strong></td>
+                            <td>@Model.Email</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Address:</strong></td>
+                            <td>@Model.Address</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Location:</strong></td>
+                            <td>@(Model.Location?.Name ?? "Not specified")</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- License Information -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="fas fa-certificate"></i> License Information</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td><strong>Mining Type:</strong></td>
+                            <td>@Model.MiningType</td>
+                        </tr>
+                        <tr>
+                            <td><strong>License Status:</strong></td>
+                            <td>
+                                <span class="badge bg-@(Model.LicenseStatus == "Active" ? "success" : Model.LicenseStatus == "Pending" ? "warning" : Model.LicenseStatus == "Expired" ? "danger" : "secondary") fs-6">@Model.LicenseStatus</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Issue Date:</strong></td>
+                            <td>@(Model.IssueDate?.ToString("MMM dd, yyyy") ?? "Not set")</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Expiry Date:</strong></td>
+                            <td>@(Model.ExpiryDate?.ToString("MMM dd, yyyy") ?? "Not set")</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Registration Date:</strong></td>
+                            <td>@Model.RegistrationDate.ToString("MMM dd, yyyy")</td>
+                        </tr>
+                        @if (!string.IsNullOrEmpty(Model.Notes))
+                        {
+                            <tr>
+                                <td><strong>Notes:</strong></td>
+                                <td>@Model.Notes</td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mining Activities -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5><i class="fas fa-clipboard-list"></i> Mining Activities</h5>
+                    <a href="@Url.Action("CreateActivity")" class="btn btn-sm btn-success">
+                        <i class="fas fa-plus"></i> Log New Activity
+                    </a>
+                </div>
+                <div class="card-body">
+                    @if (Model.MiningActivities.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Activity Type</th>
+                                        <th>Mineral</th>
+                                        <th>Quantity (kg)</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var activity in Model.MiningActivities.OrderByDescending(a => a.ActivityDate))
+                                    {
+                                        <tr>
+                                            <td>@activity.ActivityDate.ToString("MMM dd, yyyy")</td>
+                                            <td>@activity.ActivityType</td>
+                                            <td>@activity.MineralType</td>
+                                            <td>@activity.Quantity.ToString("N2")</td>
+                                            <td>
+                                                <span class="badge bg-@(activity.Status == "Completed" ? "success" : activity.Status == "In Progress" ? "warning" : "secondary")">@activity.Status</span>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No mining activities recorded yet.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Environmental Compliance -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5><i class="fas fa-leaf"></i> Environmental Compliance</h5>
+                    <a href="@Url.Action("CreateCompliance")" class="btn btn-sm btn-warning">
+                        <i class="fas fa-plus"></i> Add Compliance Record
+                    </a>
+                </div>
+                <div class="card-body">
+                    @if (Model.EnvironmentalCompliances.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Assessment Date</th>
+                                        <th>Compliance Type</th>
+                                        <th>Status</th>
+                                        <th>Inspector</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var compliance in Model.EnvironmentalCompliances.OrderByDescending(c => c.AssessmentDate))
+                                    {
+                                        <tr>
+                                            <td>@compliance.AssessmentDate.ToString("MMM dd, yyyy")</td>
+                                            <td>@compliance.ComplianceType</td>
+                                            <td>
+                                                <span class="badge bg-@(compliance.ComplianceStatus == "Compliant" ? "success" : compliance.ComplianceStatus == "Non-Compliant" ? "danger" : "warning")">@compliance.ComplianceStatus</span>
+                                            </td>
+                                            <td>@(compliance.InspectorName ?? "Not assigned")</td>
+                                            <td>
+                                                <a href="@Url.Action("ComplianceDetails", new { id = compliance.Id })" class="btn btn-sm btn-outline-primary">
+                                                    <i class="fas fa-eye"></i> View
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No compliance records found.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

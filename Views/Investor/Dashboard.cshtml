@@ -1,0 +1,161 @@
+@{
+    ViewData["Title"] = "Investor Dashboard";
+    var investor = ViewBag.Investor as Investor;
+    var jointVentures = ViewBag.JointVentures as List<JointVenture>;
+    var recentMessages = ViewBag.RecentMessages as List<InvestorMessage>;
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h2>Welcome back, @investor.CompanyName!</h2>
+            <p class="text-muted">Manage your investments and explore new opportunities</p>
+        </div>
+    </div>
+    
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>@jointVentures.Count</h4>
+                            <p class="mb-0">Active Investments</p>
+                        </div>
+                        <i class="fas fa-chart-line fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>₦@jointVentures.Sum(jv => jv.TotalInvestment).ToString("N0")</h4>
+                            <p class="mb-0">Total Invested</p>
+                        </div>
+                        <i class="fas fa-money-bill-wave fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>@recentMessages.Count</h4>
+                            <p class="mb-0">New Messages</p>
+                        </div>
+                        <i class="fas fa-envelope fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>₦@investor.InvestmentCapacity.ToString("N0")</h4>
+                            <p class="mb-0">Investment Capacity</p>
+                        </div>
+                        <i class="fas fa-wallet fa-2x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Active Investments -->
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Active Investments</h5>
+                    <a href="@Url.Action("Opportunities")" class="btn btn-primary btn-sm">Browse Opportunities</a>
+                </div>
+                <div class="card-body">
+                    @if (jointVentures.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Opportunity</th>
+                                        <th>Investment</th>
+                                        <th>Status</th>
+                                        <th>Start Date</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var venture in jointVentures)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong>@venture.Opportunity?.Title</strong><br>
+                                                <small class="text-muted">@venture.LocalPartner?.FullName</small>
+                                            </td>
+                                            <td>₦@venture.TotalInvestment.ToString("N0")</td>
+                                            <td>
+                                                <span class="badge bg-@(venture.Status == "Active" ? "success" : "warning")">@venture.Status</span>
+                                            </td>
+                                            <td>@venture.StartDate.ToString("MMM dd, yyyy")</td>
+                                            <td>
+                                                <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-4">
+                            <i class="fas fa-chart-line fa-3x text-muted mb-3"></i>
+                            <h5>No Active Investments</h5>
+                            <p class="text-muted">Start exploring investment opportunities to grow your portfolio.</p>
+                            <a href="@Url.Action("Opportunities")" class="btn btn-primary">Browse Opportunities</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recent Messages -->
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Recent Messages</h5>
+                </div>
+                <div class="card-body">
+                    @if (recentMessages.Any())
+                    {
+                        @foreach (var message in recentMessages)
+                        {
+                            <div class="border-bottom pb-2 mb-2">
+                                <h6 class="mb-1">@message.Subject</h6>
+                                <p class="small text-muted mb-1">@message.Content.Substring(0, Math.Min(80, message.Content.Length))...</p>
+                                <small class="text-muted">@message.SentAt.ToString("MMM dd, yyyy")</small>
+                            </div>
+                        }
+                        <div class="text-center mt-3">
+                            <a href="#" class="btn btn-outline-primary btn-sm">View All Messages</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-3">
+                            <i class="fas fa-envelope fa-2x text-muted mb-2"></i>
+                            <p class="text-muted mb-0">No messages yet</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

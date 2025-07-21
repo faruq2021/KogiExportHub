@@ -1,0 +1,167 @@
+@model KogiExportHub.Models.AdminDashboardViewModel
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">Admin Dashboard</h1>
+        </div>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="row mb-4">
+        <div class="col-lg-3 col-6">
+            <div class="small-box bg-warning">
+                <div class="inner">
+                    <h3>@Model.PendingMiners.Count</h3>
+                    <p>Pending Miner Approvals</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <a asp-action="MinerApprovals" class="small-box-footer">
+                    Review <i class="fas fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-6">
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>@Model.PendingInvestors.Count</h3>
+                    <p>Pending Investor Approvals</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <a asp-action="InvestorApprovals" class="small-box-footer">
+                    Review <i class="fas fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-6">
+            <div class="small-box bg-success">
+                <div class="inner">
+                    <h3>@Model.PendingInfrastructure.Count</h3>
+                    <p>Pending Infrastructure</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-road"></i>
+                </div>
+                <a asp-action="InfrastructureApprovals" class="small-box-footer">
+                    Review <i class="fas fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-6">
+            <div class="small-box bg-danger">
+                <div class="inner">
+                    <h3>@Model.PendingTaxReturns.Count</h3>
+                    <p>Pending Tax Reviews</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+                <a asp-action="TaxReturns" class="small-box-footer">
+                    Review <i class="fas fa-arrow-circle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Recent Activities -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Recent Administrative Activities</h3>
+                    <div class="card-tools">
+                        <a asp-action="ActivityLogs" class="btn btn-sm btn-primary">
+                            View All Logs
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @if (Model.RecentActivities.Any())
+                    {
+                        <div class="timeline">
+                            @foreach (var activity in Model.RecentActivities)
+                            {
+                                <div class="time-label">
+                                    <span class="bg-blue">@activity.CreatedDate.ToString("MMM dd, yyyy")</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-user bg-green"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fas fa-clock"></i> @activity.CreatedDate.ToString("HH:mm")</span>
+                                        <h3 class="timeline-header">@activity.Action</h3>
+                                        <div class="timeline-body">
+                                            @activity.Description
+                                        </div>
+                                        <div class="timeline-footer">
+                                            <small class="text-muted">by @activity.AdminUser</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No recent activities.</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Quick Actions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a asp-action="MinerApprovals" class="list-group-item list-group-item-action">
+                            <i class="fas fa-hard-hat"></i> Review Miner Applications
+                            @if (Model.PendingMiners.Count > 0)
+                            {
+                                <span class="badge badge-warning float-right">@Model.PendingMiners.Count</span>
+                            }
+                        </a>
+                        <a asp-action="InvestorApprovals" class="list-group-item list-group-item-action">
+                            <i class="fas fa-handshake"></i> Review Investor Applications
+                            @if (Model.PendingInvestors.Count > 0)
+                            {
+                                <span class="badge badge-info float-right">@Model.PendingInvestors.Count</span>
+                            }
+                        </a>
+                        <a asp-action="InfrastructureApprovals" class="list-group-item list-group-item-action">
+                            <i class="fas fa-road"></i> Review Infrastructure Projects
+                            @if (Model.PendingInfrastructure.Count > 0)
+                            {
+                                <span class="badge badge-success float-right">@Model.PendingInfrastructure.Count</span>
+                            }
+                        </a>
+                        <a asp-action="TaxReturns" class="list-group-item list-group-item-action">
+                            <i class="fas fa-file-invoice-dollar"></i> Review Tax Returns
+                            @if (Model.PendingTaxReturns.Count > 0)
+                            {
+                                <span class="badge badge-danger float-right">@Model.PendingTaxReturns.Count</span>
+                            }
+                        </a>
+                        <a asp-action="Settings" class="list-group-item list-group-item-action">
+                            <i class="fas fa-cogs"></i> System Settings
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

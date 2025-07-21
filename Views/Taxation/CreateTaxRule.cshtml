@@ -1,0 +1,123 @@
+@model TaxRule
+@{
+    ViewData["Title"] = "Create Tax Rule";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4><i class="fas fa-plus"></i> Create New Tax Rule</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="CreateTaxRule" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Name" class="form-label">Rule Name</label>
+                                    <input asp-for="Name" class="form-control" placeholder="e.g., Export Tax" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="TaxType" class="form-label">Tax Type</label>
+                                    <select asp-for="TaxType" class="form-control">
+                                        <option value="">Select Tax Type</option>
+                                        <option value="VAT">VAT</option>
+                                        <option value="Income">Income Tax</option>
+                                        <option value="Export">Export Tax</option>
+                                        <option value="Import">Import Tax</option>
+                                        <option value="Sales">Sales Tax</option>
+                                        <option value="Property">Property Tax</option>
+                                    </select>
+                                    <span asp-validation-for="TaxType" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Rate" class="form-label">Tax Rate (%)</label>
+                                    <input asp-for="Rate" class="form-control" type="number" step="0.01" min="0" max="100" />
+                                    <span asp-validation-for="Rate" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="EffectiveDate" class="form-label">Effective Date</label>
+                                    <input asp-for="EffectiveDate" class="form-control" type="date" />
+                                    <span asp-validation-for="EffectiveDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Describe when this tax rule applies..."></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="MinAmount" class="form-label">Minimum Amount (Optional)</label>
+                                    <input asp-for="MinAmount" class="form-control" type="number" step="0.01" min="0" placeholder="0.00" />
+                                    <span asp-validation-for="MinAmount" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="MaxAmount" class="form-label">Maximum Amount (Optional)</label>
+                                    <input asp-for="MaxAmount" class="form-control" type="number" step="0.01" min="0" placeholder="0.00" />
+                                    <span asp-validation-for="MaxAmount" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="ApplicableCategory" class="form-label">Applicable Category (Optional)</label>
+                                    <input asp-for="ApplicableCategory" class="form-control" placeholder="e.g., Agricultural Products" />
+                                    <span asp-validation-for="ApplicableCategory" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="ApplicableLocation" class="form-label">Applicable Location (Optional)</label>
+                                    <input asp-for="ApplicableLocation" class="form-control" placeholder="e.g., Lokoja" />
+                                    <span asp-validation-for="ApplicableLocation" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input asp-for="IsActive" class="form-check-input" type="checkbox" />
+                                <label asp-for="IsActive" class="form-check-label">
+                                    Active Rule
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between">
+                            <a href="@Url.Action("TaxRules")" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Back to Tax Rules
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Create Tax Rule
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

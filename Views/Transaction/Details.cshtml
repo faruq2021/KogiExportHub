@@ -1,0 +1,71 @@
+@model KogiExportHub.Models.Transaction
+@{
+    ViewData["Title"] = "Transaction Details";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Transaction Details</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">Transaction ID:</dt>
+                        <dd class="col-sm-9">@Model.Id</dd>
+                        
+                        <dt class="col-sm-3">Product:</dt>
+                        <dd class="col-sm-9">@Model.Product?.Name</dd>
+                        
+                        <dt class="col-sm-3">Quantity:</dt>
+                        <dd class="col-sm-9">@Model.Quantity</dd>
+                        
+                        <dt class="col-sm-3">Total Amount:</dt>
+                        <dd class="col-sm-9">₦@Model.TotalAmount.ToString("N2")</dd>
+                        
+                        <dt class="col-sm-3">Status:</dt>
+                        <dd class="col-sm-9">
+                            @switch (Model.Status)
+                            {
+                                case "Completed":
+                                    <span class="badge bg-success">Completed</span>
+                                    break;
+                                case "Pending":
+                                    <span class="badge bg-warning text-dark">Pending</span>
+                                    break;
+                                case "Cancelled":
+                                    <span class="badge bg-danger">Cancelled</span>
+                                    break;
+                                default:
+                                    <span class="badge bg-secondary">@Model.Status</span>
+                                    break;
+                            }
+                        </dd>
+                        
+                        <dt class="col-sm-3">Payment Method:</dt>
+                        <dd class="col-sm-9">@Model.PaymentMethod</dd>
+                        
+                        <dt class="col-sm-3">Transaction Reference:</dt>
+                        <dd class="col-sm-9">@Model.TransactionReference</dd>
+                        
+                        <dt class="col-sm-3">Date:</dt>
+                        <dd class="col-sm-9">@Model.CreatedAt.ToString("MMMM dd, yyyy 'at' hh:mm tt")</dd>
+                    </dl>
+                    
+                    <div class="mt-4">
+                        <a asp-action="History" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Back to History
+                        </a>
+                        @if (Model.Status == "Completed")
+                        {
+                            <a asp-controller="Payment" asp-action="DownloadReceipt" asp-route-transactionId="@Model.Id" class="btn btn-primary">
+                                <i class="bi bi-download"></i> Download Receipt
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

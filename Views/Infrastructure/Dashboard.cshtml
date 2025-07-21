@@ -1,0 +1,139 @@
+@model DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-4"><i class="bi bi-speedometer2"></i> Your Dashboard</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Quick Actions -->
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-lightning-fill"></i> Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="/Infrastructure/CreateProposal" class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-plus-circle"></i> Create Proposal
+                        </a>
+                        <a href="/Infrastructure/CreateFundingRequest" class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-cash-stack"></i> Request Funding
+                        </a>
+                        <a href="/Infrastructure/Proposals" class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-search"></i> Browse Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Proposals -->
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="bi bi-file-earmark-text"></i> Your Proposals</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.UserProposals.Any())
+                    {
+                        @foreach (var proposal in Model.UserProposals)
+                        {
+                            <div class="border-bottom pb-2 mb-2">
+                                <h6 class="mb-1">@proposal.Title</h6>
+                                <small class="text-muted">
+                                    Status: <span class="badge bg-secondary">@proposal.Status</span><br>
+                                    Cost: ₦@proposal.EstimatedCost.ToString("N0")
+                                </small>
+                            </div>
+                        }
+                        <a href="/Infrastructure/Proposals" class="btn btn-sm btn-outline-success">View All</a>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No proposals yet.</p>
+                        <a href="/Infrastructure/CreateProposal" class="btn btn-sm btn-success">Create First Proposal</a>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- User Funding Requests -->
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-header bg-warning text-dark">
+                    <h5 class="mb-0"><i class="bi bi-cash-coin"></i> Your Funding</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.UserFundingRequests.Any())
+                    {
+                        @foreach (var funding in Model.UserFundingRequests)
+                        {
+                            <div class="border-bottom pb-2 mb-2">
+                                <h6 class="mb-1">@funding.ProposalTitle</h6>
+                                <small class="text-muted">
+                                    Amount: ₦@funding.AmountRequested.ToString("N0")<br>
+                                    Status: <span class="badge bg-secondary">@funding.Status</span>
+                                </small>
+                            </div>
+                        }
+                        <a href="/Infrastructure/FundingRequests" class="btn btn-sm btn-outline-warning">View All</a>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No funding requests yet.</p>
+                        <a href="/Infrastructure/CreateFundingRequest" class="btn btn-sm btn-warning">Request Funding</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Overview -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <h4 class="mb-3"><i class="bi bi-graph-up"></i> Platform Overview</h4>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-building text-primary" style="font-size: 2rem;"></i>
+                    <h5 class="mt-2">@Model.TotalProposals</h5>
+                    <small class="text-muted">Total Proposals</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-check-circle text-success" style="font-size: 2rem;"></i>
+                    <h5 class="mt-2">@Model.ActiveProposals</h5>
+                    <small class="text-muted">Active Projects</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-currency-exchange text-info" style="font-size: 2rem;"></i>
+                    <h5 class="mt-2">₦@Model.TotalFundingRequested.ToString("N0")</h5>
+                    <small class="text-muted">Funding Requested</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-check2-circle text-warning" style="font-size: 2rem;"></i>
+                    <h5 class="mt-2">₦@Model.TotalFundingApproved.ToString("N0")</h5>
+                    <small class="text-muted">Funding Approved</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KogiExportHub</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KogiExportHub.styles.css" asp-append-version="true" />
+    <style>
+        .main-navbar {
+            background-color: #000;
+            padding: 10px 0;
+        }
+        .main-navbar .nav-link {
+            color: white;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+        .main-navbar .nav-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .navbar-logo {
+            height: 40px;
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+        .navbar-logo:hover {
+            transform: scale(1.05);
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/logo.png" alt="KogiExportHub Logo" class="navbar-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Marketplace" asp-action="ProductList">Marketplace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Cart" asp-action="Index">
+                                <i class="bi bi-cart3"></i> Cart
+                            </a>
+                        </li>
+                        
+                        <!-- Infrastructure dropdown -->
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="infrastructureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-building"></i> Infrastructure
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="infrastructureDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Infrastructure" asp-action="Dashboard">Dashboard</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Infrastructure" asp-action="Proposals">Proposals</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Infrastructure" asp-action="FundingRequests">Funding Requests</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Infrastructure" asp-action="CreateProposal">Create Proposal</a></li>
+                                </ul>
+                            </li>
+                        }
+                        
+                        <!-- Investor dropdown -->
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="investorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-graph-up"></i> Investors
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="investorsDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Investor" asp-action="Dashboard">Dashboard</a></li>
+                                    <li><a class="dropdown-item" asp-controller="InvestmentOpportunity" asp-action="Index">Opportunities</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Investor" asp-action="Register">Register as Investor</a></li>
+                                </ul>
+                            </li>
+                        }
+                        
+                        <!-- Mining dropdown -->
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="miningDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-hammer"></i> Mining
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="miningDropdown">
+                                    <li><a class="dropdown-item" href="@Url.Action("Dashboard", "Mining")"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="@Url.Action("Index", "Mining")"><i class="fas fa-users"></i> Miners</a></li>
+                                    <li><a class="dropdown-item" href="@Url.Action("Activities", "Mining")"><i class="fas fa-tasks"></i> Activities</a></li>
+                                    <li><a class="dropdown-item" href="@Url.Action("Compliance", "Mining")"><i class="fas fa-leaf"></i> Compliance</a></li>
+                                </ul>
+                            </li>
+                        }
+                        
+                        <!-- Taxation dropdown -->
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    <i class="fas fa-calculator"></i> Taxation
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="@Url.Action("Dashboard", "Taxation")">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="@Url.Action("TaxRules", "Taxation")">Tax Rules</a></li>
+                                    <li><a class="dropdown-item" href="@Url.Action("RevenueReports", "Taxation")">Revenue Reports</a></li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                    
+                    <div class="d-flex">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div class="dropdown">
+                                <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown">
+                                    <i class="bi bi-person-circle"></i> Account
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" asp-controller="Account" asp-action="Profile">Profile</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Transaction" asp-action="History">Transaction History</a></li>
+                                    <li><a class="dropdown-item" asp-controller="SellerDashboard" asp-action="Index">Seller Dashboard</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form asp-controller="Account" asp-action="Logout" method="post">
+                                            <button type="submit" class="dropdown-item">Logout</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        }
+                        else
+                        {
+                            <a class="btn btn-outline-light btn-sm me-2" asp-controller="Account" asp-action="Login">Login</a>
+                            <a class="btn btn-light btn-sm" asp-controller="Account" asp-action="Register">Register</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluid p-0">
+        <main role="main" class="pb-5">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-dark text-light py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-light">KogiExportHub</h5>
+                    <p>Connecting Kogi State's resources to global markets.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-light">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a class="text-light" asp-area="" asp-controller="Marketplace" asp-action="ProductList">Marketplace</a></li>
+                        <li><a class="text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-light">Contact Us</h5>
+                    <p><i class="bi bi-envelope"></i> info@kogiexporthub.com</p>
+                    <p><i class="bi bi-telephone"></i> +234 123 456 7890</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    &copy; 2025 - KogiExportHub - <a class="text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+<!-- Replace the existing Admin dropdown section (around lines 137-170) with this: -->
+@if (User.IsInRole("Admin"))
+{
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-shield-check"></i> Admin
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+            <!-- Dashboard -->
+            <li><h6 class="dropdown-header"><i class="bi bi-speedometer2"></i> Dashboard</h6></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="Dashboard">
+                <i class="bi bi-speedometer2"></i> Admin Dashboard
+            </a></li>
+            
+            <!-- User Management -->
+            <li><hr class="dropdown-divider"></li>
+            <li><h6 class="dropdown-header"><i class="bi bi-people"></i> User Management</h6></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="UserManagement">
+                <i class="bi bi-people"></i> All Users
+            </a></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="InvestorManagement">
+                <i class="bi bi-building"></i> Investor Management
+            </a></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="ReviewInvestor">
+                <i class="bi bi-person-check"></i> Review Investors
+            </a></li>
+            
+            <!-- Approvals & Reviews -->
+            <li><hr class="dropdown-divider"></li>
+            <li><h6 class="dropdown-header"><i class="bi bi-clipboard-check"></i> Approvals</h6></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="MinerApprovals">
+                <i class="bi bi-hammer"></i> Miner Approvals
+            </a></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="InvestorApprovals">
+                <i class="bi bi-person-check"></i> Investor Approvals
+            </a></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="InfrastructureApprovals">
+                <i class="bi bi-building"></i> Infrastructure Approvals
+            </a></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="TaxReturns">
+                <i class="bi bi-calculator"></i> Tax Return Reviews
+            </a></li>
+            
+            <!-- Infrastructure & Funding -->
+            <li><hr class="dropdown-divider"></li>
+            <li><h6 class="dropdown-header"><i class="bi bi-building"></i> Infrastructure</h6></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="InfrastructureReview">
+                <i class="bi bi-clipboard-check"></i> Review Proposals
+            </a></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="FundingReview">
+                <i class="bi bi-cash-stack"></i> Review Funding
+            </a></li>
+            
+            <!-- System Administration -->
+            <li><hr class="dropdown-divider"></li>
+            <li><h6 class="dropdown-header"><i class="bi bi-gear"></i> System</h6></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="ActivityLogs">
+                <i class="bi bi-list-ul"></i> Activity Logs
+            </a></li>
+            <li><a class="dropdown-item" asp-controller="Admin" asp-action="Settings">
+                <i class="bi bi-gear"></i> Settings
+            </a></li>
+        </ul>
+    </li>
+}
+
+<!-- Remove the duplicate Admin dropdown section at the bottom of the file (around lines 270-285) -->

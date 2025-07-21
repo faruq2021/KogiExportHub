@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Contribution Successful";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-success">
+                <div class="card-header bg-success text-white text-center">
+                    <h4><i class="fas fa-heart"></i> Contribution Successful!</h4>
+                </div>
+                <div class="card-body text-center">
+                    <p class="lead">Thank you for your generous contribution!</p>
+                    <p>Your contribution has been processed successfully and will help fund important infrastructure projects in Kogi State.</p>
+                    
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">
+                            @TempData["SuccessMessage"]
+                        </div>
+                    }
+                    
+                    @if (TempData["ContributionAmount"] != null)
+                    {
+                        <div class="alert alert-info">
+                            <strong>Contribution Amount:</strong> ₦@TempData["ContributionAmount"]
+                        </div>
+                    }
+                    
+                    <div class="mt-4">
+                        <a asp-controller="Infrastructure" asp-action="FundingRequestDetails" asp-route-id="@TempData["FundingRequestId"]" class="btn btn-primary me-2">View Project</a>
+                        <a asp-controller="Infrastructure" asp-action="Index" class="btn btn-outline-secondary">Browse More Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

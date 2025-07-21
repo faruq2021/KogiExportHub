@@ -1,0 +1,165 @@
+@model KogiExportHub.Models.InvestmentOpportunity
+@{
+    ViewData["Title"] = "Edit Investment Opportunity";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="mb-0">Edit Investment Opportunity</h3>
+                    <p class="text-muted mb-0">Update your investment opportunity details</p>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                        <input asp-for="Id" type="hidden" />
+                        
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="mb-3">
+                                    <label asp-for="Title" class="form-label">Opportunity Title</label>
+                                    <input asp-for="Title" class="form-control" placeholder="e.g., Expand Cassava Processing Plant" />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label asp-for="Sector" class="form-label">Sector</label>
+                                    <select asp-for="Sector" class="form-select">
+                                        <option value="">Select Sector</option>
+                                        <option value="Agriculture">Agriculture</option>
+                                        <option value="Manufacturing">Manufacturing</option>
+                                        <option value="Technology">Technology</option>
+                                        <option value="Healthcare">Healthcare</option>
+                                        <option value="Education">Education</option>
+                                        <option value="Tourism">Tourism</option>
+                                        <option value="Energy">Energy</option>
+                                        <option value="Transportation">Transportation</option>
+                                        <option value="Real Estate">Real Estate</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="5" 
+                                      placeholder="Provide a detailed description of your investment opportunity, including business model, market potential, and growth plans..."></textarea>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label asp-for="RequiredInvestment" class="form-label">Required Investment (₦)</label>
+                                    <input asp-for="RequiredInvestment" type="number" class="form-control" />
+                                    <div class="form-text">Leave empty to keep current value</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label asp-for="ExpectedROI" class="form-label">Expected ROI (%)</label>
+                                    <input asp-for="ExpectedROI" type="number" step="0.1" class="form-control" />
+                                    <div class="form-text">Leave empty to keep current value</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label asp-for="InvestmentPeriodMonths" class="form-label">Investment Period (Months)</label>
+                                    <input asp-for="InvestmentPeriodMonths" type="number" class="form-control" />
+                                    <div class="form-text">Leave empty to keep current value</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="LocationId" class="form-label">Location</label>
+                                    <select asp-for="LocationId" class="form-select">
+                                        <option value="">-- Select Location --</option>
+                                        @if (ViewBag.Locations != null)
+                                        {
+                                            @foreach (var location in (List<KogiExportHub.Models.Location>)ViewBag.Locations)
+                                            {
+                                                <option value="@location.Id">@location.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="RiskLevel" class="form-label">Risk Level</label>
+                                    <select asp-for="RiskLevel" class="form-select">
+                                        <option value="">-- Select Risk Level --</option>
+                                        <option value="Low">Low Risk</option>
+                                        <option value="Medium">Medium Risk</option>
+                                        <option value="High">High Risk</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        @if (!string.IsNullOrEmpty(Model.BusinessPlan))
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Current Business Plan</label>
+                                        <div>
+                                            <a href="@Model.BusinessPlan" target="_blank" class="btn btn-outline-primary btn-sm">
+                                                <i class="fas fa-download"></i> View Current Plan
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        
+                        @if (!string.IsNullOrEmpty(Model.FinancialProjections))
+                        {
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Current Financial Projections</label>
+                                        <div>
+                                            <a href="@Model.FinancialProjections" target="_blank" class="btn btn-outline-primary btn-sm">
+                                                <i class="fas fa-download"></i> View Current Projections
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("Details", new { id = Model.Id })" class="btn btn-outline-secondary me-md-2">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Update Opportunity</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            // Initialize Select2 for LocationId
+            $('#LocationId').select2({
+                placeholder: '-- Select Location --'
+            });
+        });
+    </script>
+}

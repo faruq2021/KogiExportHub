@@ -1,0 +1,89 @@
+@model KogiExportHub.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5 mb-5"> <!-- Added mb-5 for extra bottom margin -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow fade-in">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center mb-0"><i class="bi bi-person-plus"></i> Create Your Account</h2>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-controller="Account" asp-action="Register" method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FirstName" class="form-label"></label>
+                                    <input asp-for="FirstName" class="form-control" />
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="LastName" class="form-label"></label>
+                                    <input asp-for="LastName" class="form-control" />
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="form-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="PhoneNumber" class="form-label"></label>
+                            <input asp-for="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="Role" class="form-label"></label>
+                            <select asp-for="Role" class="form-select">
+                                <option value="">Select your role</option>
+                                <option value="Farmer">Farmer</option>
+                                <option value="Miner">Miner</option>
+                                <option value="Aggregator">Trade Broker/Aggregator</option>
+                                <option value="Investor">Investor</option>
+                                <option value="Technician">Technician</option>
+                                <option value="GovernmentOfficial">Government Official</option>
+                                <option value="Admin">Admin (Testing Only)</option>
+                            </select>
+                            <span asp-validation-for="Role" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label asp-for="ConfirmPassword" class="form-label"></label>
+                            <input asp-for="ConfirmPassword" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="form-group d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg"><i class="bi bi-check-circle"></i> Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <p class="mb-0">Already have an account? <a asp-action="Login">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

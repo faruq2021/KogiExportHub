@@ -1,0 +1,164 @@
+@model TaxationDashboardViewModel
+@{
+    ViewData["Title"] = "Taxation Dashboard";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="fas fa-chart-line"></i> Government Revenue Dashboard</h2>
+                <div>
+                    <a href="@Url.Action("TaxRules")" class="btn btn-primary me-2">
+                        <i class="fas fa-cogs"></i> Manage Tax Rules
+                    </a>
+                    <a href="@Url.Action("RevenueReports")" class="btn btn-success">
+                        <i class="fas fa-file-alt"></i> Revenue Reports
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Revenue Summary Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>₦@Model.TodayRevenue.ToString("N2")</h4>
+                            <p class="mb-0">Today's Revenue</p>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fas fa-calendar-day fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>₦@Model.MonthlyRevenue.ToString("N2")</h4>
+                            <p class="mb-0">This Month</p>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>₦@Model.YearlyRevenue.ToString("N2")</h4>
+                            <p class="mb-0">This Year</p>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fas fa-chart-bar fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-white">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>₦@Model.TotalRevenue.ToString("N2")</h4>
+                            <p class="mb-0">Total Revenue</p>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fas fa-money-bill-wave fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Revenue by Category and Recent Revenues -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="fas fa-pie-chart"></i> Revenue by Category</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.RevenueByCategory.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Amount</th>
+                                        <th>Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var category in Model.RevenueByCategory)
+                                    {
+                                        <tr>
+                                            <td>@category.Category</td>
+                                            <td>₦@category.Amount.ToString("N2")</td>
+                                            <td>@category.Count</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No revenue data available.</p>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="fas fa-clock"></i> Recent Revenues</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.RecentRevenues.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Type</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var revenue in Model.RecentRevenues)
+                                    {
+                                        <tr>
+                                            <td>@revenue.RevenueDate.ToString("MMM dd, yyyy")</td>
+                                            <td>@revenue.RevenueType</td>
+                                            <td>₦@revenue.Amount.ToString("N2")</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No recent revenue data available.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

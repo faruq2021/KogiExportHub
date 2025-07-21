@@ -1,0 +1,107 @@
+@model IEnumerable<InvestmentOpportunity>
+@{
+    ViewData["Title"] = "Investment Opportunities";
+}
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-4"><i class="bi bi-search"></i> Investment Opportunities</h2>
+            
+            <!-- Filters -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form method="get" class="row g-3">
+                        <div class="col-md-3">
+                            <label class="form-label">Sector</label>
+                            <select name="sector" class="form-select">
+                                <option value="">All Sectors</option>
+                                <option value="Agriculture" selected="@(Context.Request.Query["sector"] == "Agriculture")">Agriculture</option>
+                                <option value="Technology" selected="@(Context.Request.Query["sector"] == "Technology")">Technology</option>
+                                <option value="Manufacturing" selected="@(Context.Request.Query["sector"] == "Manufacturing")">Manufacturing</option>
+                                <option value="Services" selected="@(Context.Request.Query["sector"] == "Services")">Services</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Location</label>
+                            <select name="location" class="form-select">
+                                <option value="">All Locations</option>
+                                <option value="Lokoja" selected="@(Context.Request.Query["location"] == "Lokoja")">Lokoja</option>
+                                <option value="Okene" selected="@(Context.Request.Query["location"] == "Okene")">Okene</option>
+                                <option value="Kabba" selected="@(Context.Request.Query["location"] == "Kabba")">Kabba</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">Min Investment</label>
+                            <input type="number" name="minAmount" class="form-control" value="@Context.Request.Query["minAmount"]" placeholder="₦0">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">Max Investment</label>
+                            <input type="number" name="maxAmount" class="form-control" value="@Context.Request.Query["maxAmount"]" placeholder="₦1,000,000">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">&nbsp;</label>
+                            <button type="submit" class="btn btn-primary d-block w-100">Filter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Opportunities Grid -->
+            <div class="row">
+                @if (Model != null && Model.Any())
+                {
+                    @foreach (var opportunity in Model)
+                    {
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">@opportunity.Title</h5>
+                                    <p class="card-text">@opportunity.Description.Substring(0, Math.Min(150, opportunity.Description.Length))...</p>
+                                    
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary">@opportunity.Sector</span>
+                                        <span class="badge bg-secondary">@opportunity.Location?.Name</span>
+                                        <span class="badge bg-@(opportunity.RiskLevel == "Low" ? "success" : opportunity.RiskLevel == "Medium" ? "warning" : "danger")">@opportunity.RiskLevel Risk</span>
+                                    </div>
+                                    
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <small class="text-muted">Required Investment</small>
+                                            <div class="fw-bold">₦@opportunity.RequiredInvestment.ToString("N0")</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <small class="text-muted">Expected ROI</small>
+                                            <div class="fw-bold text-success">@opportunity.ExpectedROI%</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <small class="text-muted">Investment Period</small>
+                                            <div>@opportunity.InvestmentPeriodMonths months</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="@Url.Action("OpportunityDetails", new { id = opportunity.Id })" class="btn btn-primary btn-sm">View Details</a>
+                                    <a href="@Url.Action("ExpressInterest", new { opportunityId = opportunity.Id })" class="btn btn-outline-success btn-sm">Express Interest</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <div class="text-center py-5">
+                            <i class="bi bi-search display-1 text-muted"></i>
+                            <h4 class="text-muted mt-3">No opportunities found</h4>
+                            <p class="text-muted">Try adjusting your filters or check back later for new opportunities.</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

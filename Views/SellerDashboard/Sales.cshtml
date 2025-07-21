@@ -1,0 +1,136 @@
+@model IEnumerable<KogiExportHub.Models.Transaction>
+@{
+    ViewData["Title"] = "Sales History";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1>Sales History</h1>
+        <a asp-action="Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+    <hr />
+
+    <div class="card">
+        <div class="card-header bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mb-0">All Transactions</h5>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search transactions...">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover" id="salesTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Product</th>
+                                <th>Buyer</th>
+                                <th>Quantity</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Payment Method</th>
+                                <th>Reference</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var transaction in Model)
+                            {
+                                <tr>
+                                    <td>@transaction.Id</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            @if (!string.IsNullOrEmpty(transaction.Product.ImageUrl))
+                                            {
+                                                <img src="@transaction.Product.ImageUrl" alt="@transaction.Product.Name" class="me-2" style="width: 40px; height: 40px; object-fit: cover;">
+                                            }
+                                            <span>@transaction.Product.Name</span>
+                                        </div>
+                                    </td>
+                                    <td>@transaction.Buyer.FirstName @transaction.Buyer.LastName</td>
+                                    <td>@transaction.Quantity @transaction.Product.Unit</td>
+                                    <td>₦@transaction.TotalAmount.ToString("N2")</td>
+                                    <td>
+                                        @if (transaction.Status == "Completed")
+                                        {
+                                            <span class="badge bg-success">Completed</span>
+                                        }
+                                        else if (transaction.Status == "Pending")
+                                        {
+                                            <span class="badge bg-warning text-dark">Pending</span>
+                                        }
+                                        else if (transaction.Status == "Cancelled")
+                                        {
+                                            <span class="badge bg-danger">Cancelled</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary">@transaction.Status</span>
+                                        }
+                                    </td>
+                                    <td>@transaction.PaymentMethod</td>
+                                    <td>
+                                        <span class="text-muted">@transaction.TransactionReference</span>
+                                    </td>
+                                    <td>@transaction.CreatedAt.ToString("MMM dd, yyyy HH:mm")</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton@(transaction.Id)" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Actions
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton@(transaction.Id)">
+                                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                                <li><a class="dropdown-item" href="#">Contact Buyer</a></li>
+                                                @if (transaction.Status == "Pending")
+                                                {
+                                                    <li><a class="dropdown-item text-success" href="#">Mark as Completed</a></li>
+                                                    <li><a class="dropdown-item text-danger" href="#">Cancel Order</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-cart-x" style="font-size: 3rem;"></i>
+                    <h4 class="mt-3">No sales transactions found</h4>
+                    <p class="text-muted">When you make sales, they will appear here.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Simple search functionality
+            $("#searchInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#salesTable tbody tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+}

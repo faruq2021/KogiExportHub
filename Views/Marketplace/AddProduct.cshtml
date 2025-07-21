@@ -1,0 +1,171 @@
+@model KogiExportHub.Models.ProductViewModel
+@{
+    ViewData["Title"] = "Add New Product";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="AddProduct" method="post" enctype="multipart/form-data" id="addProductForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="CategoryId" class="control-label">Category</label>
+                <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))" id="categorySelect">
+                    <option value="">-- Select Category --</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label">Price per Unit</label>
+                        <div class="input-group">
+                            <input asp-for="Price" class="form-control" type="number" step="0.01" id="priceInput" />
+                            <span class="input-group-text" id="unitDisplay">per unit</span>
+                        </div>
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="Quantity" class="control-label"></label>
+                        <div class="input-group">
+                            <input asp-for="Quantity" class="form-control" type="number" id="quantityInput" />
+                            <span class="input-group-text" id="unitLabel">units</span>
+                        </div>
+                        <span asp-validation-for="Quantity" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <input type="hidden" asp-for="Unit" id="unitInput" />
+            
+            <div class="form-group mb-3">
+                <label asp-for="ImageFile" class="control-label">Product Image</label>
+                <input asp-for="ImageFile" type="file" class="form-control" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="LocationId" class="control-label">Location (Optional)</label>
+                <select asp-for="LocationId" class="form-control" asp-items="@(new SelectList(ViewBag.Locations, "Id", "Name"))">
+                    <option value="">-- Select Location --</option>
+                </select>
+                <span asp-validation-for="LocationId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add Product</button>
+                <a asp-action="ProductList" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+    
+    <div class="col-md-4 offset-md-1">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Price Calculator</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label class="form-label">Product:</label>
+                    <p id="calculatorProductName" class="form-control-plaintext">-</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Category:</label>
+                    <p id="calculatorCategory" class="form-control-plaintext">-</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Unit Price:</label>
+                    <p id="calculatorUnitPrice" class="form-control-plaintext">-</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Quantity:</label>
+                    <p id="calculatorQuantity" class="form-control-plaintext">-</p>
+                </div>
+                <hr />
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Total Price:</label>
+                    <p id="calculatorTotalPrice" class="form-control-plaintext fw-bold fs-4 text-primary">-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        $(document).ready(function() {
+            // Function to update the calculator
+            function updateCalculator() {
+                const productName = $('#Name').val() || '-';
+                const categoryId = $('#categorySelect').val();
+                const categoryText = categoryId ? $('#categorySelect option:selected').text() : '-';
+                const price = parseFloat($('#priceInput').val()) || 0;
+                const quantity = parseInt($('#quantityInput').val()) || 0;
+                const unit = $('#unitDisplay').text().replace('per ', '');
+                
+                $('#calculatorProductName').text(productName);
+                $('#calculatorCategory').text(categoryText);
+                $('#calculatorUnitPrice').text(`₦${price.toFixed(2)} per ${unit}`);
+                $('#calculatorQuantity').text(`${quantity} ${unit}${quantity !== 1 ? 's' : ''}`);
+                
+                const totalPrice = price * quantity;
+                $('#calculatorTotalPrice').text(`₦${totalPrice.toFixed(2)}`);
+            }
+            
+            // Update calculator when inputs change
+            $('#Name, #priceInput, #quantityInput').on('input', updateCalculator);
+            
+            // Handle category change
+            $('#categorySelect').change(function() {
+                const categoryId = $(this).val();
+                if (categoryId) {
+                    $.ajax({
+                        url: '/Marketplace/GetCategoryUnit',
+                        type: 'GET',
+                        data: { categoryId: categoryId },
+                        success: function(data) {
+                            const unit = data.unit;
+                            $('#unitInput').val(unit);
+                            $('#unitDisplay').text(`per ${unit}`);
+                            $('#unitLabel').text(unit + (parseInt($('#quantityInput').val()) !== 1 ? 's' : ''));
+                            updateCalculator();
+                        }
+                    });
+                } else {
+                    $('#unitInput').val('');
+                    $('#unitDisplay').text('per unit');
+                    $('#unitLabel').text('units');
+                    updateCalculator();
+                }
+            });
+            
+            // Update unit label when quantity changes
+            $('#quantityInput').on('input', function() {
+                const unit = $('#unitInput').val() || 'unit';
+                const quantity = parseInt($(this).val()) || 0;
+                $('#unitLabel').text(unit + (quantity !== 1 ? 's' : ''));
+                updateCalculator();
+            });
+        });
+    </script>
+}

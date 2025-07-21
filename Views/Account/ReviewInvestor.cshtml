@@ -1,0 +1,67 @@
+@model KogiExportHub.Models.Investor
+
+@{
+    ViewData["Title"] = "Review Investor Application";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Investor Application Review</h3>
+                    <p class="text-muted mb-0">Review and verify investor registration details</p>
+                </div>
+                <div class="card-body">
+                    <!-- Investor details form here -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Company Information</h5>
+                            <p><strong>Company Name:</strong> @Model.CompanyName</p>
+                            <p><strong>Contact Person:</strong> @Model.ContactPerson</p>
+                            <p><strong>Email:</strong> @Model.Email</p>
+                            <p><strong>Phone:</strong> @Model.Phone</p>
+                            <p><strong>Country:</strong> @Model.Country</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Investment Details</h5>
+                            <p><strong>Investment Capacity:</strong> ₦@Model.InvestmentCapacity.ToString("N0")</p>
+                            <p><strong>Investment Focus:</strong> @Model.PreferredSectors</p>
+                            <p><strong>Registration Date:</strong> @Model.RegistrationDate.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <h5>Business Description</h5>
+                            <p>@Model.BusinessDescription</p>
+                        </div>
+                    </div>
+                    
+                    @if (!string.IsNullOrEmpty(Model.VerificationDocuments))
+                    {
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <h5>Verification Documents</h5>
+                                <a href="@Model.VerificationDocuments" target="_blank" class="btn btn-outline-primary">
+                                    <i class="bi bi-file-earmark-pdf"></i> View Document
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-success me-2" onclick="approveInvestor(@Model.Id, '@Model.CompanyName')">
+                        <i class="bi bi-check-circle"></i> Approve
+                    </button>
+                    <button type="button" class="btn btn-danger me-2" onclick="rejectInvestor(@Model.Id, '@Model.CompanyName')">
+                        <i class="bi bi-x-circle"></i> Reject
+                    </button>
+                    <a asp-action="AdminDashboard" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

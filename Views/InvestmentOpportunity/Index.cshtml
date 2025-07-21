@@ -1,0 +1,78 @@
+@model List<InvestmentOpportunity>
+@{
+    ViewData["Title"] = "My Investment Opportunities";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2>My Investment Opportunities</h2>
+                    <p class="text-muted">Manage your investment opportunities and connect with investors</p>
+                </div>
+                <a href="@Url.Action("Create")" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Create New Opportunity
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    @if (Model.Any())
+    {
+        <div class="row">
+            @foreach (var opportunity in Model)
+            {
+                <div class="col-lg-6 col-xl-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title">@opportunity.Title</h5>
+                                <span class="badge bg-@(opportunity.Status == "Open" ? "success" : "secondary")">@opportunity.Status</span>
+                            </div>
+                            
+                            <p class="card-text">@opportunity.Description.Substring(0, Math.Min(100, opportunity.Description.Length))...</p>
+                            
+                            <div class="mb-3">
+                                <span class="badge bg-primary">@opportunity.Sector</span>
+                                <span class="badge bg-secondary">@opportunity.Location?.Name</span>
+                            </div>
+                            
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small class="text-muted">Required Investment</small>
+                                    <div class="fw-bold">₦@opportunity.RequiredInvestment.ToString("N0")</div>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">Expected ROI</small>
+                                    <div class="fw-bold text-success">@opportunity.ExpectedROI%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <small class="text-muted">Created: @opportunity.CreatedAt.ToString("MMM dd, yyyy")</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn-group w-100" role="group">
+                                <a href="@Url.Action("Details", new { id = opportunity.Id })" class="btn btn-outline-primary btn-sm">View</a>
+                                <a href="@Url.Action("Edit", new { id = opportunity.Id })" class="btn btn-outline-secondary btn-sm">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-lightbulb fa-4x text-muted mb-4"></i>
+            <h4>No Investment Opportunities Yet</h4>
+            <p class="text-muted mb-4">Create your first investment opportunity to connect with foreign investors.</p>
+            <a href="@Url.Action("Create")" class="btn btn-primary btn-lg">
+                <i class="fas fa-plus"></i> Create Your First Opportunity
+            </a>
+        </div>
+    }
+</div>

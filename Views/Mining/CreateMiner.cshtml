@@ -1,0 +1,123 @@
+@model KogiExportHub.Models.Miner
+@{
+    ViewData["Title"] = "Register New Miner";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="mb-0"><i class="fas fa-user-plus"></i> Register New Miner</h3>
+                    <p class="text-muted mb-0">Complete the form to register a new artisanal miner</p>
+                </div>
+                <div class="card-body">
+                    <form asp-action="CreateMiner" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="FullName" class="form-label">Full Name</label>
+                                    <input asp-for="FullName" class="form-control" placeholder="Enter full name" />
+                                    <span asp-validation-for="FullName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                                    <input asp-for="PhoneNumber" class="form-control" placeholder="e.g., +234 xxx xxx xxxx" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Email" class="form-label">Email Address</label>
+                                    <input asp-for="Email" type="email" class="form-control" placeholder="Enter email address" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="MiningType" class="form-label">Mining Type</label>
+                                    <select asp-for="MiningType" class="form-select">
+                                        <option value="">Select Mining Type</option>
+                                        <option value="Gold">Gold</option>
+                                        <option value="Tin">Tin</option>
+                                        <option value="Columbite">Columbite</option>
+                                        <option value="Tantalite">Tantalite</option>
+                                        <option value="Iron Ore">Iron Ore</option>
+                                        <option value="Coal">Coal</option>
+                                        <option value="Limestone">Limestone</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span asp-validation-for="MiningType" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label">Address</label>
+                            <textarea asp-for="Address" class="form-control" rows="3" placeholder="Enter complete address"></textarea>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="LocationId" class="form-label">Location</label>
+                                    <select asp-for="LocationId" class="form-select">
+                                        <option value="">Select Location</option>
+                                        @if (ViewBag.Locations != null)
+                                        {
+                                            @foreach (var location in (List<KogiExportHub.Models.Location>)ViewBag.Locations)
+                                            {
+                                                <option value="@location.Id">@location.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="LicenseStatus" class="form-label">License Status</label>
+                                    <select asp-for="LicenseStatus" class="form-select">
+                                        <option value="Pending">Pending</option>
+                                        <option value="Active">Active</option>
+                                        <option value="Suspended">Suspended</option>
+                                        <option value="Expired">Expired</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="IssueDate" class="form-label">License Issue Date</label>
+                                    <input asp-for="IssueDate" type="date" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="ExpiryDate" class="form-label">License Expiry Date</label>
+                                    <input asp-for="ExpiryDate" type="date" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Notes" class="form-label">Notes</label>
+                            <textarea asp-for="Notes" class="form-control" rows="3" placeholder="Additional notes or comments"></textarea>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("Index")" class="btn btn-outline-secondary me-md-2">Cancel</a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Register Miner
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

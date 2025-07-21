@@ -1,0 +1,116 @@
+@model Investor
+@{
+    ViewData["Title"] = "Investor Registration";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="mb-0">Foreign Investor Registration</h3>
+                    <p class="text-muted mb-0">Join our platform to access exclusive investment opportunities</p>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Register" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="CompanyName" class="form-label">Company Name *</label>
+                                    <input asp-for="CompanyName" class="form-control" required />
+                                    <span asp-validation-for="CompanyName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="ContactPerson" class="form-label">Contact Person *</label>
+                                    <input asp-for="ContactPerson" class="form-control" required />
+                                    <span asp-validation-for="ContactPerson" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Email" class="form-label">Email Address *</label>
+                                    <input asp-for="Email" type="email" class="form-control" required />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="Phone" class="form-label">Phone Number *</label>
+                                    <input asp-for="Phone" class="form-control" required />
+                                    <span asp-validation-for="Phone" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Country" class="form-label">Country *</label>
+                            <input asp-for="Country" class="form-control" required />
+                            <span asp-validation-for="Country" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="InvestmentCapacity" class="form-label">Investment Capacity (₦) *</label>
+                                    <input asp-for="InvestmentCapacity" type="number" class="form-control" required />
+                                    <span asp-validation-for="InvestmentCapacity" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="PreferredSectors" class="form-label">Preferred Sectors</label>
+                                    <select asp-for="PreferredSectors" class="form-select" multiple>
+                                        <option value="Agriculture">Agriculture</option>
+                                        <option value="Manufacturing">Manufacturing</option>
+                                        <option value="Technology">Technology</option>
+                                        <option value="Healthcare">Healthcare</option>
+                                        <option value="Education">Education</option>
+                                        <option value="Tourism">Tourism</option>
+                                        <option value="Energy">Energy</option>
+                                        <option value="Transportation">Transportation</option>
+                                        <option value="Real Estate">Real Estate</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="form-text">Hold Ctrl (or Cmd on Mac) to select multiple sectors</div>
+                                    <span asp-validation-for="PreferredSectors" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="verificationDocument" class="form-label">Verification Document</label>
+                            <input type="file" name="verificationDocument" class="form-control" accept=".pdf,.doc,.docx,.jpg,.png" />
+                            <div class="form-text">Upload company registration, certificate of incorporation, or similar document (PDF, DOC, or Image)</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="BusinessDescription" class="form-label">Business Description</label>
+                            <textarea asp-for="BusinessDescription" class="form-control" rows="4" placeholder="Brief description of your company and investment focus"></textarea>
+                            <span asp-validation-for="BusinessDescription" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required />
+                            <label class="form-check-label" for="termsCheck">
+                                I agree to the <a href="#" target="_blank">Terms and Conditions</a> and <a href="#" target="_blank">Privacy Policy</a>
+                            </label>
+                        </div>
+                        
+                        <div class="d-grid mb-5">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

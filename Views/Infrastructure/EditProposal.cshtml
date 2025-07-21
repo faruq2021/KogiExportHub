@@ -1,0 +1,130 @@
+@model KogiExportHub.Models.InfrastructureProposal
+@{
+    ViewData["Title"] = "Edit Infrastructure Proposal";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Proposals">Infrastructure Proposals</a></li>
+            <li class="breadcrumb-item"><a asp-action="ProposalDetails" asp-route-id="@Model.Id">@Model.Title</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edit</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Edit Infrastructure Proposal</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="EditProposal" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="ProposerId" />
+                <input type="hidden" asp-for="Status" />
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="Title" class="control-label">Title</label>
+                            <input asp-for="Title" class="form-control" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="CategoryId" class="control-label">Category</label>
+                            <select asp-for="CategoryId" class="form-select">
+                                <option value="">-- Select Category --</option>
+                                @foreach (var category in ViewBag.Categories)
+                                {
+                                    <option value="@category.Id">@category.Name</option>
+                                }
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="LocationId" class="control-label">Location</label>
+                            <select asp-for="LocationId" class="form-select">
+                                <option value="">-- Select Location --</option>
+                                @foreach (var location in ViewBag.Locations)
+                                {
+                                    <option value="@location.Id">@location.Name</option>
+                                }
+                            </select>
+                            <span asp-validation-for="LocationId" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="EstimatedCost" class="control-label">Estimated Cost (₦)</label>
+                            <input asp-for="EstimatedCost" class="form-control" type="number" step="0.01" />
+                            <span asp-validation-for="EstimatedCost" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="ExpectedTimelineMonths" class="control-label">Expected Timeline (months)</label>
+                            <input asp-for="ExpectedTimelineMonths" class="form-control" type="number" />
+                            <span asp-validation-for="ExpectedTimelineMonths" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="ExpectedBeneficiaries" class="control-label">Expected Beneficiaries</label>
+                            <input asp-for="ExpectedBeneficiaries" class="form-control" type="number" />
+                            <span asp-validation-for="ExpectedBeneficiaries" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="control-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ExpectedImpact" class="control-label">Expected Impact</label>
+                    <textarea asp-for="ExpectedImpact" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="ExpectedImpact" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="documentation" class="control-label">Documentation (PDF, Word, etc.)</label>
+                    @if (!string.IsNullOrEmpty(Model.DocumentationUrl))
+                    {
+                        <div class="mb-2">
+                            <a href="@Model.DocumentationUrl" target="_blank" class="btn btn-sm btn-outline-primary">
+                                <i class="bi bi-file-earmark-text"></i> View Current Documentation
+                            </a>
+                        </div>
+                    }
+                    <input type="file" id="documentation" name="documentation" class="form-control" />
+                    <small class="form-text text-muted">Upload a new file only if you want to replace the current one.</small>
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save"></i> Save Changes
+                    </button>
+                    <a asp-action="ProposalDetails" asp-route-id="@Model.Id" class="btn btn-outline-secondary">
+                        <i class="bi bi-x-circle"></i> Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,417 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KogiExportHub.bundle.scp.css",
+      "PackagePath": "staticwebassets\\KogiExportHub.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\cashew.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\cashew.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\cassava.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\cassava.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\iron-ore.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\iron-ore.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\limestone.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\limestone.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\cta-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\cta-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\hero-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\hero-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\00772c8e-06d7-4f54-8548-e5419dce7b58_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
+      "PackagePath": "staticwebassets\\images\\products\\00772c8e-06d7-4f54-8548-e5419dce7b58_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\288eb563-8d33-4e78-a167-7467a307b0f0_IMG-20220206-WA0037.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\288eb563-8d33-4e78-a167-7467a307b0f0_IMG-20220206-WA0037.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\3232f221-2f5a-45b6-9aa8-e8d676e39cb9_133885966830334063.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3232f221-2f5a-45b6-9aa8-e8d676e39cb9_133885966830334063.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\63d6f6d5-a94c-4452-bbc7-ba4626b63c51_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
+      "PackagePath": "staticwebassets\\images\\products\\63d6f6d5-a94c-4452-bbc7-ba4626b63c51_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\68796ce0-3e7e-4c48-a536-c46eb4c8948c_133885966830334063.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\68796ce0-3e7e-4c48-a536-c46eb4c8948c_133885966830334063.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\cd47ea73-242d-4c2a-b719-ffbbe8fe4ca8_IMG-20220206-WA0037.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\cd47ea73-242d-4c2a-b719-ffbbe8fe4ca8_IMG-20220206-WA0037.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\e9f1a3d8-c31b-4d84-90ad-6cba3f2594ad_OIP.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\e9f1a3d8-c31b-4d84-90ad-6cba3f2594ad_OIP.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_136b7429-1abf-4922-8c6e-ddd20db9bb38_bulb.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_136b7429-1abf-4922-8c6e-ddd20db9bb38_bulb.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_346cecbc-0077-4505-ba82-fbcbf29b2d72_consultation.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_346cecbc-0077-4505-ba82-fbcbf29b2d72_consultation.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_54a01ba6-32ad-477c-a543-dda5a3e01926_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_54a01ba6-32ad-477c-a543-dda5a3e01926_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_6aebd909-e3a3-49c0-a37a-f859842b1ed9_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_6aebd909-e3a3-49c0-a37a-f859842b1ed9_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_75d596d6-238f-403a-97fa-428af533f3fb_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_75d596d6-238f-403a-97fa-428af533f3fb_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_833ec00c-1120-4aec-9411-4c842d201b58_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_833ec00c-1120-4aec-9411-4c842d201b58_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_c18363c7-eaed-44a4-9004-1592c1f5c85e_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_c18363c7-eaed-44a4-9004-1592c1f5c85e_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\4971a229-ead3-4c42-8be6-0d3b84bfbd86_0592d814-f07d-4b09-81ef-db39cb5c71e5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\4971a229-ead3-4c42-8be6-0d3b84bfbd86_0592d814-f07d-4b09-81ef-db39cb5c71e5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\6a1f5927-1e22-4603-847a-9cf3797f6f87_103a62a1-97ce-4633-b1c9-320eee8f5cbe_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\6a1f5927-1e22-4603-847a-9cf3797f6f87_103a62a1-97ce-4633-b1c9-320eee8f5cbe_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\786dc3c2-0294-4322-b8ef-24a7c125ebb7_ece92dad-5b58-4833-b575-8388e7c00d88_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\786dc3c2-0294-4322-b8ef-24a7c125ebb7_ece92dad-5b58-4833-b575-8388e7c00d88_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\96a8c9a2-d83a-4b5f-b4ea-15f9a6a5e074_7baaffdf-3282-46b5-a260-ae6d6cfa52d5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\96a8c9a2-d83a-4b5f-b4ea-15f9a6a5e074_7baaffdf-3282-46b5-a260-ae6d6cfa52d5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\ff9da01a-21da-4e9d-9eb3-63fac14463d5_f2d6a093-eba4-4e84-a375-b45c130ef517_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "PackagePath": "staticwebassets\\images\\profiles\\ff9da01a-21da-4e9d-9eb3-63fac14463d5_f2d6a093-eba4-4e84-a375-b45c130ef517_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\js\\animations.js",
+      "PackagePath": "staticwebassets\\js\\animations.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\1e5bbb1b-7b4d-4296-8233-c21d11333149_Dependency_Injection_CSharp_Guide.pdf",
+      "PackagePath": "staticwebassets\\uploads\\investor-docs\\1e5bbb1b-7b4d-4296-8233-c21d11333149_Dependency_Injection_CSharp_Guide.pdf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\214919e2-d263-49dc-85b3-5ca4d35cf15a_Dependency_Injection_CSharp_Guide.pdf",
+      "PackagePath": "staticwebassets\\uploads\\investor-docs\\214919e2-d263-49dc-85b3-5ca4d35cf15a_Dependency_Injection_CSharp_Guide.pdf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\4f1cb170-d3fb-4790-979d-398e3cec7e62_KogiExportHub_DevelopmentPlan.pdf",
+      "PackagePath": "staticwebassets\\uploads\\investor-docs\\4f1cb170-d3fb-4790-979d-398e3cec7e62_KogiExportHub_DevelopmentPlan.pdf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\b57740c2-8c37-43b9-87b1-097bb6b4cd62_CSharp_Threading_Presentation.pdf",
+      "PackagePath": "staticwebassets\\uploads\\investor-docs\\b57740c2-8c37-43b9-87b1-097bb6b4cd62_CSharp_Threading_Presentation.pdf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\d785c052-0007-452b-9e3c-0050555c2b17_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
+      "PackagePath": "staticwebassets\\uploads\\investor-docs\\d785c052-0007-452b-9e3c-0050555c2b17_\uD83D\uDCD8 Dependency Injection (DI) .pdf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\dfdb6411-b81b-477f-b1de-7c563b2197de_UC-A41 Enhance Login with Indemnity Status (1).docx",
+      "PackagePath": "staticwebassets\\uploads\\investor-docs\\dfdb6411-b81b-477f-b1de-7c563b2197de_UC-A41 Enhance Login with Indemnity Status (1).docx"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\opportunities\\61b8aa34-639a-4527-a1e9-db7b00d3d566_UC-A40 Update User Indemnity Status (1).docx",
+      "PackagePath": "staticwebassets\\uploads\\opportunities\\61b8aa34-639a-4527-a1e9-db7b00d3d566_UC-A40 Update User Indemnity Status (1).docx"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\opportunities\\acfaf2c8-5696-491d-a129-8825e23d0861_UC-A41 Enhance Login with Indemnity Status (1).docx",
+      "PackagePath": "staticwebassets\\uploads\\opportunities\\acfaf2c8-5696-491d-a129-8825e23d0861_UC-A41 Enhance Login with Indemnity Status (1).docx"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\proposals\\74a76163-da38-486b-8f99-496800898a5b_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
+      "PackagePath": "staticwebassets\\uploads\\proposals\\74a76163-da38-486b-8f99-496800898a5b_\uD83D\uDCD8 Dependency Injection (DI) .pdf"
+    },
+    {
+      "Id": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\proposals\\74f922cc-bdb2-40d5-9fa0-f33761db413e_hydroponics-business-plan (3).pdf",
+      "PackagePath": "staticwebassets\\uploads\\proposals\\74f922cc-bdb2-40d5-9fa0-f33761db413e_hydroponics-business-plan (3).pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KogiExportHub.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.KogiExportHub.props",
+      "PackagePath": "build\\KogiExportHub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.KogiExportHub.props",
+      "PackagePath": "buildMultiTargeting\\KogiExportHub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.KogiExportHub.props",
+      "PackagePath": "buildTransitive\\KogiExportHub.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,124 @@
+@model UserProfile
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<div class="container-fluid mt-4">
+    <h1 class="mb-4"><i class="bi bi-pencil"></i> Edit User</h1>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5>User Information</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="EditUser" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="CreatedAt" />
+                        <input type="hidden" asp-for="UpdatedAt" />
+                        <input type="hidden" asp-for="UserId" />
+                        <input type="hidden" asp-for="ProfilePictureUrl" />
+                        <input type="hidden" asp-for="LocationId" />
+                        <input type="hidden" asp-for="FlutterwaveSubaccountId" />
+                        <input type="hidden" asp-for="BankCode" />
+                        <input type="hidden" asp-for="AccountNumber" />
+                        <input type="hidden" asp-for="AccountName" />
+                        <input type="hidden" asp-for="IsPaymentSetupComplete" />
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="FirstName" class="form-label">First Name</label>
+                                    <input asp-for="FirstName" class="form-control" />
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="LastName" class="form-label">Last Name</label>
+                                    <input asp-for="LastName" class="form-control" />
+                                    <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Email</label>
+                            <input asp-for="Email" class="form-control" type="email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                            <input asp-for="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Role" class="form-label">Role</label>
+                            <select asp-for="Role" class="form-select">
+                                <option value="Buyer">Buyer</option>
+                                <option value="Seller">Seller</option>
+                                <option value="Investor">Investor</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                            <span asp-validation-for="Role" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="BusinessName" class="form-label">Business Name (Optional)</label>
+                            <input asp-for="BusinessName" class="form-control" />
+                            <span asp-validation-for="BusinessName" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="BusinessDescription" class="form-label">Business Description (Optional)</label>
+                            <textarea asp-for="BusinessDescription" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="BusinessDescription" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check"></i> Update User
+                            </button>
+                            <a asp-action="UserManagement" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>User Details</h5>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-5">User ID:</dt>
+                        <dd class="col-sm-7">@Model.Id</dd>
+                        
+                        <dt class="col-sm-5">Created:</dt>
+                        <dd class="col-sm-7">@Model.CreatedAt.ToString("MMM dd, yyyy")</dd>
+                        
+                        <dt class="col-sm-5">Current Role:</dt>
+                        <dd class="col-sm-7">
+                            <span class="badge bg-info">@Model.Role</span>
+                        </dd>
+                        
+                        <dt class="col-sm-5">Full Name:</dt>
+                        <dd class="col-sm-7">@Model.FullName</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

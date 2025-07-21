@@ -1,0 +1,69 @@
+@model IEnumerable<KogiExportHub.Models.Transaction>
+@{
+    ViewData["Title"] = "Transaction History";
+}
+
+<div class="container">
+    <h2>Transaction History</h2>
+    
+    <div class="card">
+        <div class="card-body">
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Total Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var transaction in Model)
+                            {
+                                <tr>
+                                    <td>@transaction.Id</td>
+                                    <td>@transaction.Product?.Name</td>
+                                    <td>@transaction.Quantity</td>
+                                    <td>₦@transaction.TotalAmount.ToString("N2")</td>
+                                    <td>
+                                        @switch (transaction.Status)
+                                        {
+                                            case "Completed":
+                                                <span class="badge bg-success">Completed</span>
+                                                break;
+                                            case "Pending":
+                                                <span class="badge bg-warning text-dark">Pending</span>
+                                                break;
+                                            case "Cancelled":
+                                                <span class="badge bg-danger">Cancelled</span>
+                                                break;
+                                            default:
+                                                <span class="badge bg-secondary">@transaction.Status</span>
+                                                break;
+                                        }
+                                    </td>
+                                    <td>@transaction.CreatedAt.ToString("MMM dd, yyyy")</td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-info">Details</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info">
+                    You have no transaction history yet.
+                </div>
+            }
+        </div>
+    </div>
+</div>

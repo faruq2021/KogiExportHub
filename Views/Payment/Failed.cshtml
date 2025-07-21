@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Payment Failed";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white text-center">
+                    <h4><i class="fas fa-times-circle"></i> Payment Failed</h4>
+                </div>
+                <div class="card-body text-center">
+                    <p class="lead">We're sorry, but your payment could not be processed.</p>
+                    
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger">
+                            @TempData["ErrorMessage"]
+                        </div>
+                    }
+                    
+                    <p>Please try again or contact support if the problem persists.</p>
+                    
+                    <div class="mt-4">
+                        <a asp-controller="Cart" asp-action="Checkout" class="btn btn-primary me-2">Try Again</a>
+                        <a asp-controller="Cart" asp-action="Index" class="btn btn-outline-secondary">Back to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

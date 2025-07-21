@@ -1,0 +1,148 @@
+@model KogiExportHub.Models.Product
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="container">
+    <h2>Checkout</h2>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5>Order Summary</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                            {
+                                <img src="@Model.ImageUrl" class="img-thumbnail" alt="@Model.Name">
+                            }
+                            else
+                            {
+                                <img src="/images/no-image.jpg" class="img-thumbnail" alt="No Image Available">
+                            }
+                        </div>
+                        <div class="col-md-9">
+                            <h5>@Model.Name</h5>
+                            <p>@(Model.Description?.Length > 100 ? Model.Description.Substring(0, 97) + "..." : Model.Description)</p>
+                            <p><strong>Price:</strong> ₦@Model.Price.ToString("N2")</p>
+                            <p><strong>Available:</strong> @Model.Quantity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h5>Payment Information</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Transaction" asp-action="Checkout" method="post">
+                        <input type="hidden" name="ProductId" value="@Model.Id" />
+                        
+                        <div class="form-group mb-3">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" name="Quantity" class="form-control" min="1" max="@Model.Quantity" value="1" required />
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="paymentMethod">Payment Method</label>
+                            <select id="paymentMethod" name="PaymentMethod" class="form-control" required>
+                                <option value="">Select Payment Method</option>
+                                <option value="CreditCard">Credit Card</option>
+                                <option value="BankTransfer">Bank Transfer</option>
+                                <option value="PayOnDelivery">Pay on Delivery</option>
+                            </select>
+                        </div>
+                        
+                        <div id="creditCardDetails" class="d-none">
+                            <div class="form-group mb-3">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" class="form-control" placeholder="1234 5678 9012 3456" />
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="expiryDate">Expiry Date</label>
+                                        <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" class="form-control" placeholder="123" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <label for="shippingAddress">Shipping Address</label>
+                            <textarea id="shippingAddress" name="ShippingAddress" class="form-control" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Complete Purchase</button>
+                            <a asp-controller="Marketplace" asp-action="ProductDetails" asp-route-id="@Model.Id" class="btn btn-outline-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Order Total</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <span>₦@Model.Price.ToString("N2")</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Shipping:</span>
+                        <span>₦0.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Tax:</span>
+                        <span>₦0.00</span>
+                    </div>
+                    <hr />
+                    <div class="d-flex justify-content-between">
+                        <strong>Total:</strong>
+                        <strong>₦@Model.Price.ToString("N2")</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $('#paymentMethod').change(function() {
+                if ($(this).val() === 'CreditCard') {
+                    $('#creditCardDetails').removeClass('d-none');
+                } else {
+                    $('#creditCardDetails').addClass('d-none');
+                }
+            });
+            
+            $('#quantity').change(function() {
+                updateTotal();
+            });
+            
+            function updateTotal() {
+                var quantity = $('#quantity').val();
+                var price = @Model.Price;
+                var total = quantity * price;
+                $('.order-total').text('₦' + total.toFixed(2));
+            }
+        });
+    </script>
+}

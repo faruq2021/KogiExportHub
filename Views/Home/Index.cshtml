@@ -1,0 +1,731 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="home-container">
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-wrapper">
+            <div class="container">
+                <div class="hero-content text-center text-white">
+                    <div class="hero-badge mb-3">
+                        <span class="badge bg-success fs-6 px-3 py-2">
+                            <i class="bi bi-geo-alt-fill"></i> Kogi State Government Initiative
+                        </span>
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4 hero-title">Welcome to KogiExportHub</h1>
+                    <p class="lead mb-5 hero-subtitle">Empowering Kogi State's agricultural and mineral resources to reach global markets through innovation and technology</p>
+                    
+                    <div class="hero-buttons d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/Marketplace/ProductList" class="btn btn-primary btn-lg px-4 py-3">
+                            <i class="bi bi-cart3 me-2"></i> Explore Marketplace
+                        </a>
+                        <a href="/Infrastructure/Proposals" class="btn btn-success btn-lg px-4 py-3">
+                            <i class="bi bi-building me-2"></i> Infrastructure Hub
+                        </a>
+                        <a href="/Account/Register" class="btn btn-outline-light btn-lg px-4 py-3">
+                            <i class="bi bi-person-plus me-2"></i> Join Our Network
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="bi bi-chevron-down"></i>
+        </div>
+    </section>
+    
+    <!-- Infrastructure Statistics Section -->
+    <section class="infrastructure-stats-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title slide-in-up">
+                    <i class="bi bi-graph-up-arrow text-primary me-2"></i>
+                    Infrastructure Development Impact
+                </h2>
+                <p class="section-subtitle text-muted">Driving economic growth through strategic infrastructure investments</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center slide-in-left" style="animation-delay: 0.1s;">
+                        <div class="stat-icon mb-3">
+                            <i class="bi bi-building text-primary"></i>
+                        </div>
+                        <h3 class="stat-number text-primary">@Model.TotalProposals</h3>
+                        <p class="stat-label">Total Proposals</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar bg-primary"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center slide-in-left" style="animation-delay: 0.2s;">
+                        <div class="stat-icon mb-3">
+                            <i class="bi bi-check-circle text-success"></i>
+                        </div>
+                        <h3 class="stat-number text-success">@Model.ActiveProposals</h3>
+                        <p class="stat-label">Active Projects</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar bg-success"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center slide-in-left" style="animation-delay: 0.3s;">
+                        <div class="stat-icon mb-3">
+                            <i class="bi bi-cash-stack text-warning"></i>
+                        </div>
+                        <h3 class="stat-number text-warning">₦@Model.TotalFundingRequested.ToString("N0")</h3>
+                        <p class="stat-label">Funding Requested</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar bg-warning"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center slide-in-left" style="animation-delay: 0.4s;">
+                        <div class="stat-icon mb-3">
+                            <i class="bi bi-trophy text-info"></i>
+                        </div>
+                        <h3 class="stat-number text-info">₦@Model.TotalFundingApproved.ToString("N0")</h3>
+                        <p class="stat-label">Funding Approved</p>
+                        <div class="stat-progress">
+                            <div class="progress-bar bg-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="/Infrastructure/Proposals" class="btn btn-primary btn-lg px-4 py-3">
+                    <i class="bi bi-arrow-right-circle me-2"></i> Explore Infrastructure Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title slide-in-up">Our Platform Features</h2>
+                <p class="section-subtitle text-muted">Comprehensive solutions for agricultural and mineral export excellence</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 slide-in-left" style="animation-delay: 0.1s;">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-globe text-primary"></i>
+                        </div>
+                        <h3 class="feature-title">Global Market Access</h3>
+                        <p class="feature-description">Connect directly with international buyers and access new markets for your products with our comprehensive trading platform.</p>
+                        <div class="feature-link">
+                            <a href="/Marketplace/ProductList" class="btn btn-outline-primary btn-sm">
+                                Learn More <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 slide-in-left" style="animation-delay: 0.3s;">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-building text-success"></i>
+                        </div>
+                        <h3 class="feature-title">Infrastructure Development</h3>
+                        <p class="feature-description">Propose, fund, and track infrastructure projects that drive economic growth and sustainable development in Kogi State.</p>
+                        <div class="feature-link">
+                            <a href="/Infrastructure/Proposals" class="btn btn-outline-success btn-sm">
+                                Learn More <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card h-100 slide-in-left" style="animation-delay: 0.5s;">
+                        <div class="feature-icon mb-4">
+                            <i class="bi bi-shield-check text-info"></i>
+                        </div>
+                        <h3 class="feature-title">Quality Assurance</h3>
+                        <p class="feature-description">All products and projects undergo rigorous quality checks to meet international standards and ensure customer satisfaction.</p>
+                        <div class="feature-link">
+                            <a href="#" class="btn btn-outline-info btn-sm">
+                                Learn More <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title slide-in-up">
+                    <i class="bi bi-grid-3x3-gap text-primary me-2"></i>
+                    Explore Product Categories
+                </h2>
+                <p class="section-subtitle text-muted">Discover Kogi State's premium agricultural and mineral products</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card bounce-in" style="animation-delay: 0.1s;">
+                        <div class="category-img">
+                            <div class="category-overlay">
+                                <a href="/Marketplace/ProductList?category=cashew" class="btn btn-light btn-sm">
+                                    <i class="bi bi-eye me-1"></i> View Products
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Cashew Nuts</h4>
+                            <p class="category-description">Premium quality cashew nuts from Kogi State farms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card bounce-in" style="animation-delay: 0.2s;">
+                        <div class="category-img">
+                            <div class="category-overlay">
+                                <a href="/Marketplace/ProductList?category=cassava" class="btn btn-light btn-sm">
+                                    <i class="bi bi-eye me-1"></i> View Products
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Cassava Products</h4>
+                            <p class="category-description">High-quality cassava flour and derivatives</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card bounce-in" style="animation-delay: 0.3s;">
+                        <div class="category-img">
+                            <div class="category-overlay">
+                                <a href="/Marketplace/ProductList?category=limestone" class="btn btn-light btn-sm">
+                                    <i class="bi bi-eye me-1"></i> View Products
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Limestone</h4>
+                            <p class="category-description">Industrial-grade limestone for construction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card bounce-in" style="animation-delay: 0.4s;">
+                        <div class="category-img">
+                            <div class="category-overlay">
+                                <a href="/Marketplace/ProductList?category=iron-ore" class="btn btn-light btn-sm">
+                                    <i class="bi bi-eye me-1"></i> View Products
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <h4 class="category-title">Iron Ore</h4>
+                            <p class="category-description">High-grade iron ore for steel production</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title slide-in-up">
+                    <i class="bi bi-chat-quote text-primary me-2"></i>
+                    What Our Users Say
+                </h2>
+                <p class="section-subtitle text-muted">Success stories from our growing community</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100 slide-in-right" style="animation-delay: 0.1s;">
+                        <div class="testimonial-content">
+                            <div class="quote-icon mb-3">
+                                <i class="bi bi-quote text-primary"></i>
+                            </div>
+                            <p class="testimonial-text">"KogiExportHub has transformed my farming business by connecting me with international buyers. My income has increased significantly since joining."</p>
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="user-avatar">
+                                <i class="bi bi-person-circle text-primary"></i>
+                            </div>
+                            <div class="user-info">
+                                <h5 class="user-name">John Adamu</h5>
+                                <p class="user-role">Cashew Farmer</p>
+                                <div class="user-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100 slide-in-right" style="animation-delay: 0.3s;">
+                        <div class="testimonial-content">
+                            <div class="quote-icon mb-3">
+                                <i class="bi bi-quote text-primary"></i>
+                            </div>
+                            <p class="testimonial-text">"The infrastructure funding platform helped us secure investment for our mining operation. The process was transparent and efficient."</p>
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="user-avatar">
+                                <i class="bi bi-person-circle text-success"></i>
+                            </div>
+                            <div class="user-info">
+                                <h5 class="user-name">Sarah Johnson</h5>
+                                <p class="user-role">Infrastructure Investor</p>
+                                <div class="user-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100 slide-in-right" style="animation-delay: 0.5s;">
+                        <div class="testimonial-content">
+                            <div class="quote-icon mb-3">
+                                <i class="bi bi-quote text-primary"></i>
+                            </div>
+                            <p class="testimonial-text">"The market intelligence provided by KogiExportHub has helped our mining operation optimize production based on global demand."</p>
+                        </div>
+                        <div class="testimonial-user">
+                            <div class="user-avatar">
+                                <i class="bi bi-person-circle text-info"></i>
+                            </div>
+                            <div class="user-info">
+                                <h5 class="user-name">Mohammed Ibrahim</h5>
+                                <p class="user-role">Mining Operator</p>
+                                <div class="user-rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <div class="cta-content scale-in">
+                <div class="cta-icon mb-4">
+                    <i class="bi bi-rocket-takeoff text-white"></i>
+                </div>
+                <h2 class="cta-title text-white mb-3">Ready to Get Started?</h2>
+                <p class="cta-subtitle text-white-50 mb-4">
+                    <i class="bi bi-people me-2"></i>
+                    Join our growing community of farmers, miners, traders, and investors.
+                </p>
+                <div class="cta-buttons">
+                    <a href="/Account/Register" class="btn btn-light btn-lg px-4 py-3 me-3">
+                        <i class="bi bi-person-plus me-2"></i> Create Your Account Today
+                    </a>
+                    <a href="/Marketplace/ProductList" class="btn btn-outline-light btn-lg px-4 py-3">
+                        <i class="bi bi-eye me-2"></i> Browse Products
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+/* Enhanced Homepage Styles */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-content-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.hero-badge .badge {
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-buttons .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+@@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(-10px); }
+    60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Section Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Stats Cards */
+.infrastructure-stats-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.stat-card {
+    background: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #28a745, #ffc107, #17a2b8);
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon i {
+    font-size: 3.5rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.stat-progress {
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 75%;
+    border-radius: 2px;
+    animation: progressAnimation 2s ease-out;
+}
+
+@@keyframes progressAnimation {
+    from { width: 0; }
+    to { width: 75%; }
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Category Cards */
+.category-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.category-img {
+    height: 200px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover .category-overlay {
+    opacity: 1;
+}
+
+.category-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.category-description {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.quote-icon i {
+    font-size: 2rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar i {
+    font-size: 3rem;
+}
+
+.user-name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+.user-role {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-rating i {
+    font-size: 0.8rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-icon i {
+    font-size: 4rem;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.cta-subtitle {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.cta-buttons .btn {
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        margin: 0 !important;
+    }
+    
+    .stat-card, .feature-card, .testimonial-card {
+        margin-bottom: 2rem;
+    }
+}
+</style>

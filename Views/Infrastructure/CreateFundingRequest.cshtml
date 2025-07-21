@@ -1,0 +1,155 @@
+@model KogiExportHub.Models.FundingRequest
+@{
+    ViewData["Title"] = "Create Funding Request";
+    var proposal = ViewBag.Proposal as KogiExportHub.Models.InfrastructureProposal;
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Proposals">Infrastructure Proposals</a></li>
+            <li class="breadcrumb-item"><a asp-action="ProposalDetails" asp-route-id="@proposal.Id">@proposal.Title</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Create Funding Request</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Create Funding Request</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="CreateFundingRequest" method="post">
+                        <div asp-validation-summary="All" class="alert alert-danger"></div>
+                        <input type="hidden" asp-for="ProposalId" />
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="AmountRequested" class="control-label">Amount Requested (₦)</label>
+                                    <input asp-for="AmountRequested" class="form-control" type="number" step="0.01" />
+                                    <span asp-validation-for="AmountRequested" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FundingType" class="control-label">Funding Type</label>
+                                    <select asp-for="FundingType" class="form-select" id="fundingType">
+                                        <option value="">-- Select Funding Type --</option>
+                                        <option value="Grant">Grant</option>
+                                        <option value="Loan">Loan</option>
+                                        <option value="Investment">Investment</option>
+                                        <option value="PublicPrivatePartnership">Public-Private Partnership</option>
+                                    </select>
+                                    <span asp-validation-for="FundingType" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="loanFields" class="d-none">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="InterestRate" class="control-label">Interest Rate (%)</label>
+                                        <input asp-for="InterestRate" class="form-control" type="number" step="0.01" />
+                                        <span asp-validation-for="InterestRate" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="RepaymentTermMonths" class="control-label">Repayment Term (months)</label>
+                                        <input asp-for="RepaymentTermMonths" class="form-control" type="number" />
+                                        <span asp-validation-for="RepaymentTermMonths" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="investmentFields" class="d-none">
+                            <div class="form-group mb-3">
+                                <label asp-for="EquityPercentage" class="control-label">Equity Percentage (%)</label>
+                                <input asp-for="EquityPercentage" class="form-control" type="number" step="0.01" />
+                                <span asp-validation-for="EquityPercentage" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <div class="form-check">
+                                <input asp-for="IsShariaCompliant" class="form-check-input" type="checkbox" id="isShariaCompliant" />
+                                <label class="form-check-label" for="isShariaCompliant">
+                                    Sharia Compliant Funding
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="shariaFields" class="d-none">
+                            <div class="form-group mb-3">
+                                <label asp-for="ProfitSharingTerms" class="control-label">Profit Sharing Terms</label>
+                                <textarea asp-for="ProfitSharingTerms" class="form-control" rows="3"></textarea>
+                                <span asp-validation-for="ProfitSharingTerms" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-send"></i> Submit Request
+                            </button>
+                            <a asp-action="ProposalDetails" asp-route-id="@proposal.Id" class="btn btn-outline-secondary">
+                                <i class="bi bi-x-circle"></i> Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Proposal Summary</h5>
+                </div>
+                <div class="card-body">
+                    <h6>@proposal.Title</h6>
+                    <p class="text-muted">@proposal.Category.Name | @proposal.Location.Name</p>
+                    <hr />
+                    <p><strong>Estimated Cost:</strong> ₦@proposal.EstimatedCost.ToString("N2")</p>
+                    <p><strong>Timeline:</strong> @proposal.ExpectedTimelineMonths months</p>
+                    <p><strong>Beneficiaries:</strong> @proposal.ExpectedBeneficiaries people</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            // Show/hide fields based on funding type
+            $('#FundingType').change(function () {
+                var selectedType = $(this).val();
+                $('#loanFields').addClass('d-none');
+                $('#investmentFields').addClass('d-none');
+                
+                if (selectedType === 'Loan') {
+                    $('#loanFields').removeClass('d-none');
+                } else if (selectedType === 'Investment') {
+                    $('#investmentFields').removeClass('d-none');
+                }
+            });
+            
+            // Trigger change event on page load to show appropriate fields
+            $('#FundingType').trigger('change');
+            
+            // Show/hide Sharia fields
+            $('#IsShariaCompliant').change(function () {
+                if ($(this).is(':checked')) {
+                    $('#shariaFields').removeClass('d-none');
+                } else {
+                    $('#shariaFields').addClass('d-none');
+                }
+            });
+        });
+    </script>
+}

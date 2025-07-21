@@ -1,0 +1,143 @@
+@model InvestmentOpportunity
+@{
+    ViewData["Title"] = Model.Title;
+    var interestedInvestors = ViewBag.InterestedInvestors as List<InvestorMessage>;
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="mb-0">@Model.Title</h3>
+                        <div class="mt-2">
+                            <span class="badge bg-primary">@Model.Sector</span>
+                            <span class="badge bg-secondary">@Model.Location?.Name</span>
+                            <span class="badge bg-@(Model.RiskLevel == "Low" ? "success" : Model.RiskLevel == "Medium" ? "warning" : "danger")">@Model.RiskLevel Risk</span>
+                            <span class="badge bg-@(Model.Status == "Open" ? "success" : "secondary")">@Model.Status</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-outline-primary btn-sm">Edit</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <h6 class="text-muted">Required Investment</h6>
+                            <h4 class="text-primary">₦@Model.RequiredInvestment.ToString("N0")</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-muted">Expected ROI</h6>
+                            <h4 class="text-success">@Model.ExpectedROI%</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-muted">Investment Period</h6>
+                            <h4>@Model.InvestmentPeriodMonths months</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h6 class="text-muted">Created</h6>
+                            <h6>@Model.CreatedAt.ToString("MMM dd, yyyy")</h6>
+                        </div>
+                    </div>
+                    
+                    <h5>Description</h5>
+                    <p class="mb-4">@Model.Description</p>
+                    
+                    @if (!string.IsNullOrEmpty(Model.BusinessPlan))
+                    {
+                        <div class="mb-3">
+                            <h6>Business Plan</h6>
+                            <a href="@Model.BusinessPlan" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-download"></i> Download Business Plan
+                            </a>
+                        </div>
+                    }
+                    
+                    @if (!string.IsNullOrEmpty(Model.FinancialProjections))
+                    {
+                        <div class="mb-3">
+                            <h6>Financial Projections</h6>
+                            <a href="@Model.FinancialProjections" target="_blank" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-download"></i> Download Financial Projections
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="mb-0">Interested Investors (@interestedInvestors.Count)</h6>
+                </div>
+                <div class="card-body">
+                    @if (interestedInvestors.Any())
+                    {
+                        @foreach (var message in interestedInvestors)
+                        {
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h6 class="mb-1">@message.Sender?.CompanyName</h6>
+                                        <small class="text-muted">@message.Sender?.Country</small>
+                                    </div>
+                                    <small class="text-muted">@message.SentAt.ToString("MMM dd")</small>
+                                </div>
+                                <p class="small mt-2 mb-2">@message.Content.Substring(0, Math.Min(100, message.Content.Length))...</p>
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#messageModal@(message.Id)">
+                                    View Full Message
+                                </button>
+                                
+                                <!-- Message Modal -->
+                                <div class="modal fade" id="messageModal@(message.Id)" tabindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">@message.Subject</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <strong>From:</strong> @message.Sender?.CompanyName (@message.Sender?.Country)<br>
+                                                    <strong>Contact:</strong> @message.Sender?.Email<br>
+                                                    <strong>Date:</strong> @message.SentAt.ToString("MMMM dd, yyyy")
+                                                </div>
+                                                <div class="mb-3">
+                                                    <strong>Message:</strong>
+                                                    <p>@message.Content</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="mailto:@message.Sender?.Email" class="btn btn-primary">Reply via Email</a>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="text-center py-3">
+                            <i class="fas fa-users fa-2x text-muted mb-2"></i>
+                            <p class="text-muted mb-0">No interested investors yet</p>
+                            <small class="text-muted">Share your opportunity to attract investors</small>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-12">
+            <a href="@Url.Action("Index")" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left"></i> Back to My Opportunities
+            </a>
+        </div>
+    </div>
+</div>

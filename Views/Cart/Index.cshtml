@@ -1,0 +1,204 @@
+@model KogiExportHub.Models.Cart
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<div class="container my-5">
+    <div class="row mb-4">
+        <div class="col">
+            <h1 class="display-5 fw-bold">
+                <i class="bi bi-cart3"></i> Shopping Cart
+            </h1>
+        </div>
+    </div>
+
+    @if (!Model.Items.Any())
+    {
+        <div class="row">
+            <div class="col text-center py-5">
+                <div class="mb-4">
+                    <i class="bi bi-cart-x" style="font-size: 5rem; color: #ccc;"></i>
+                </div>
+                <h2>Your cart is empty</h2>
+                <p class="lead">Looks like you haven't added any products to your cart yet.</p>
+                <a asp-controller="Marketplace" asp-action="ProductList" class="btn btn-primary btn-lg mt-3">
+                    <i class="bi bi-shop"></i> Continue Shopping
+                </a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white py-3">
+                        <h5 class="mb-0">Cart Items (@Model.TotalItems)</h5>
+                    </div>
+                    <div class="card-body">
+                        @foreach (var item in Model.Items)
+                        {
+                            <div class="row mb-4 cart-item" data-product-id="@item.ProductId">
+                                <div class="col-md-3 col-lg-2 mb-3 mb-md-0">
+                                    @if (!string.IsNullOrEmpty(item.ImageUrl))
+                                    {
+                                        <img src="~/@item.ImageUrl.Replace("\\", "/")" class="img-fluid rounded" alt="@item.ProductName">
+                                    }
+                                    else
+                                    {
+                                        <img src="~/images/placeholder.png" class="img-fluid rounded" alt="No Image Available">
+                                    }
+                                </div>
+                                <div class="col-md-9 col-lg-10">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <h5><a asp-controller="Marketplace" asp-action="ProductDetails" asp-route-id="@item.ProductId" class="text-decoration-none">@item.ProductName</a></h5>
+                                            <p class="text-muted small mb-2">Seller: @item.SellerName</p>
+                                            <p class="text-success fw-bold mb-0">@item.UnitPrice.ToString("C") per @item.Unit</p>
+                                        </div>
+                                        <div class="col-lg-4 mt-3 mt-lg-0">
+                                            <label class="form-label">Quantity</label>
+                                            <div class="input-group">
+                                                <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity(@item.ProductId, -1)">-</button>
+                                                <input type="number" class="form-control text-center quantity-input" value="@item.Quantity" min="1" max="@item.AvailableQuantity" data-product-id="@item.ProductId" readonly>
+                                                <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity(@item.ProductId, 1)">+</button>
+                                            </div>
+                                            <small class="text-muted">Max: @item.AvailableQuantity @item.Unit</small>
+                                        </div>
+                                        <div class="col-lg-3 mt-3 mt-lg-0 text-end">
+                                            <div>
+                                                <span class="fw-bold item-total">@item.TotalPrice.ToString("C")</span>
+                                            </div>
+                                            <button class="btn btn-sm btn-outline-danger mt-2" onclick="removeItem(@item.ProductId)">
+                                                <i class="bi bi-trash"></i> Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @if (Model.Items.Last() != item)
+                            {
+                                <hr class="my-4">
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white py-3">
+                        <h5 class="mb-0">Order Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Subtotal</span>
+                            <span class="fw-bold" id="subtotal">@Model.SubTotal.ToString("C")</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Government Tax (7.5%)</span>
+                            <span id="tax">@Model.GovernmentTax.ToString("C")</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Platform Fee (2.5%)</span>
+                            <span id="fee">@Model.PlatformFee.ToString("C")</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="fw-bold">Total</span>
+                            <span class="fw-bold fs-5" id="total">@Model.Total.ToString("C")</span>
+                        </div>
+                        <div class="d-grid gap-2 mt-4">
+                            <a asp-action="Checkout" class="btn btn-primary btn-lg">
+                                <i class="bi bi-credit-card"></i> Proceed to Checkout
+                            </a>
+                            <a asp-controller="Marketplace" asp-action="ProductList" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        function updateQuantity(productId, change) {
+            const itemRow = document.querySelector(`.cart-item[data-product-id="${productId}"]`);
+            const quantityInput = itemRow.querySelector('.item-quantity');
+            const currentQuantity = parseInt(quantityInput.value);
+            const maxQuantity = parseInt(quantityInput.getAttribute('max'));
+            
+            let newQuantity = currentQuantity + change;
+            if (newQuantity < 1) newQuantity = 1;
+            if (newQuantity > maxQuantity) newQuantity = maxQuantity;
+            
+            if (newQuantity !== currentQuantity) {
+                fetch('/Cart/UpdateQuantity', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    },
+                    body: `productId=${productId}&quantity=${newQuantity}`
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        quantityInput.value = newQuantity;
+                        updateCartDisplay();
+                    }
+                });
+            }
+        }
+        
+        function removeItem(productId) {
+            if (confirm('Are you sure you want to remove this item from your cart?')) {
+                fetch('/Cart/RemoveFromCart', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    },
+                    body: `productId=${productId}`
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const itemRow = document.querySelector(`.cart-item[data-product-id="${productId}"]`);
+                        const hr = itemRow.nextElementSibling;
+                        if (hr && hr.tagName === 'HR') {
+                            hr.remove();
+                        } else if (itemRow.previousElementSibling && itemRow.previousElementSibling.tagName === 'HR') {
+                            itemRow.previousElementSibling.remove();
+                        }
+                        itemRow.remove();
+                        
+                        if (document.querySelectorAll('.cart-item').length === 0) {
+                            location.reload(); // Reload to show empty cart message
+                        } else {
+                            updateCartDisplay();
+                        }
+                    }
+                });
+            }
+        }
+        
+        function updateCartDisplay() {
+            fetch('/Cart/GetCartCount')
+                .then(response => response.json())
+                .then(data => {
+                    // Update cart count in navbar if it exists
+                    const cartBadge = document.querySelector('.cart-count');
+                    if (cartBadge) {
+                        cartBadge.textContent = data.count;
+                        cartBadge.style.display = data.count > 0 ? 'inline' : 'none';
+                    }
+                    
+                    // Reload the page to refresh totals
+                    location.reload();
+                });
+        }
+    </script>
+}

@@ -1,0 +1,155 @@
+@model KogiExportHub.Models.Miner
+
+@{
+    ViewData["Title"] = "Edit Miner";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Edit Miner Information</h3>
+                    <div class="card-tools">
+                        <a asp-action="Index" class="btn btn-secondary btn-sm">
+                            <i class="fas fa-arrow-left"></i> Back to List
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form asp-action="EditMiner" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="LicenseNumber" />
+                        <input type="hidden" asp-for="RegistrationDate" />
+                        <input type="hidden" asp-for="CreatedAt" />
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="LicenseNumber" class="form-label"></label>
+                                    <input asp-for="LicenseNumber" class="form-control" readonly />
+                                    <small class="form-text text-muted">License number cannot be changed</small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="LicenseStatus" class="form-label"></label>
+                                    <select asp-for="LicenseStatus" class="form-control">
+                                        <option value="Pending">Pending</option>
+                                        <option value="Active">Active</option>
+                                        <option value="Suspended">Suspended</option>
+                                        <option value="Expired">Expired</option>
+                                    </select>
+                                    <span asp-validation-for="LicenseStatus" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="FullName" class="form-label"></label>
+                                    <input asp-for="FullName" class="form-control" />
+                                    <span asp-validation-for="FullName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="PhoneNumber" class="form-label"></label>
+                                    <input asp-for="PhoneNumber" class="form-control" />
+                                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Email" class="form-label"></label>
+                                    <input asp-for="Email" class="form-control" type="email" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="MiningType" class="form-label"></label>
+                                    <select asp-for="MiningType" class="form-control">
+                                        <option value="">Select Mining Type</option>
+                                        <option value="Gold">Gold</option>
+                                        <option value="Tin">Tin</option>
+                                        <option value="Columbite">Columbite</option>
+                                        <option value="Tantalite">Tantalite</option>
+                                        <option value="Limestone">Limestone</option>
+                                        <option value="Coal">Coal</option>
+                                        <option value="Iron Ore">Iron Ore</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span asp-validation-for="MiningType" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Address" class="form-label"></label>
+                            <textarea asp-for="Address" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="LocationId" class="form-label"></label>
+                                    <select asp-for="LocationId" class="form-control">
+                                        <option value="">Select Location</option>
+                                        @foreach (var location in ViewBag.Locations as List<KogiExportHub.Models.Location>)
+                                        {
+                                            <option value="@location.Id">@location.Name</option>
+                                        }
+                                    </select>
+                                    <span asp-validation-for="LocationId" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="IssueDate" class="form-label"></label>
+                                    <input asp-for="IssueDate" class="form-control" type="date" />
+                                    <span asp-validation-for="IssueDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label asp-for="ExpiryDate" class="form-label"></label>
+                                    <input asp-for="ExpiryDate" class="form-control" type="date" />
+                                    <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Notes" class="form-label"></label>
+                            <textarea asp-for="Notes" class="form-control" rows="4" placeholder="Additional notes or comments..."></textarea>
+                            <span asp-validation-for="Notes" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Update Miner
+                            </button>
+                            <a asp-action="MinerDetails" asp-route-id="@Model.Id" class="btn btn-info">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-times"></i> Cancel
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

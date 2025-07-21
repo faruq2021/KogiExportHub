@@ -1,0 +1,65 @@
+@model IEnumerable<KogiExportHub.Models.FundingRequest>
+@{
+    ViewData["Title"] = "Funding Requests";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="bi bi-cash-coin"></i> Funding Requests</h2>
+                @if (User.IsInRole("Admin") || User.IsInRole("Seller"))
+                {
+                    <a asp-action="CreateFundingRequest" class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i> Request Funding
+                    </a>
+                }
+            </div>
+
+            @if (Model.Any())
+            {
+                <div class="row">
+                    @foreach (var request in Model)
+                    {
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0">@request.Proposal?.Title</h6>
+                                    <span class="badge bg-@(request.Status == "Approved" ? "success" : request.Status == "Rejected" ? "danger" : "warning")">
+                                        @request.Status
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <strong>Amount:</strong> ₦@request.AmountRequested.ToString("N2")<br>
+                                        <strong>Type:</strong> @request.FundingType<br>
+                                        <strong>Requester:</strong> @(request.Requester?.FirstName + " " + request.Requester?.LastName)
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a asp-action="ProposalDetails" asp-route-id="@request.ProposalId" class="btn btn-outline-primary btn-sm">
+                                        <i class="bi bi-eye"></i> View Proposal
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-cash-coin text-muted" style="font-size: 4rem;"></i>
+                    <h4 class="text-muted mt-3">No Funding Requests</h4>
+                    <p class="text-muted">No funding requests have been submitted yet.</p>
+                    @if (User.IsInRole("Admin") || User.IsInRole("Seller"))
+                    {
+                        <a asp-action="CreateFundingRequest" class="btn btn-primary mt-3">
+                            <i class="bi bi-plus-circle"></i> Submit First Request
+                        </a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
