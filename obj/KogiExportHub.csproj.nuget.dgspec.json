@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\KogiExportHub.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\KogiExportHub\\KogiExportHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\KogiExportHub.csproj": {
+    "C:\\Users\\USER\\source\\repos\\KogiExportHub\\KogiExportHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\KogiExportHub.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\KogiExportHub.csproj",
         "projectName": "KogiExportHub",
-        "projectPath": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\KogiExportHub.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\KogiExportHub.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

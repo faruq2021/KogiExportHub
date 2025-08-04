@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YBzsC8a8hk37zuTNbJLwAQzd6KxJH3X2rdiWwxF+imY=",
+  "Hash": "NbT6KbDsAzSg34CzdsSbkQ+yj5O12r5PFlVDZCQ0JOY=",
   "Source": "KogiExportHub",
   "BasePath": "_content/KogiExportHub",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "KogiExportHub\\wwwroot",
       "Source": "KogiExportHub",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "Pattern": "**"
     }
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.3\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KogiExportHub.styles.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KogiExportHub.styles.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "KogiExportHub.styles.css",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KogiExportHub.styles.css"
+      "OriginalItemSpec": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\bundle\\KogiExportHub.styles.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KogiExportHub.bundle.scp.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KogiExportHub.bundle.scp.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "KogiExportHub.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KogiExportHub.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KogiExportHub.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\css\\home.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\css\\home.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "css/home.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\css\\site.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\favicon.ico",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\cashew.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\categories\\cashew.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/categories/cashew.jpg",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\cashew.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\cassava.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\categories\\cassava.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/categories/cassava.jpg",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\cassava.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\iron-ore.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\categories\\iron-ore.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/categories/iron-ore.jpg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\iron-ore.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\categories\\limestone.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\categories\\limestone.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/categories/limestone.jpg",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\limestone.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\cta-bg.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\cta-bg.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/cta-bg.jpg",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cta-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\hero-bg.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\hero-bg.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/hero-bg.jpg",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hero-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\logo.png",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\00772c8e-06d7-4f54-8548-e5419dce7b58_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\products\\00772c8e-06d7-4f54-8548-e5419dce7b58_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/products/00772c8e-06d7-4f54-8548-e5419dce7b58_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\00772c8e-06d7-4f54-8548-e5419dce7b58_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\288eb563-8d33-4e78-a167-7467a307b0f0_IMG-20220206-WA0037.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\products\\288eb563-8d33-4e78-a167-7467a307b0f0_IMG-20220206-WA0037.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/products/288eb563-8d33-4e78-a167-7467a307b0f0_IMG-20220206-WA0037.jpg",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\288eb563-8d33-4e78-a167-7467a307b0f0_IMG-20220206-WA0037.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\3232f221-2f5a-45b6-9aa8-e8d676e39cb9_133885966830334063.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\products\\3232f221-2f5a-45b6-9aa8-e8d676e39cb9_133885966830334063.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/products/3232f221-2f5a-45b6-9aa8-e8d676e39cb9_133885966830334063.jpg",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\3232f221-2f5a-45b6-9aa8-e8d676e39cb9_133885966830334063.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\63d6f6d5-a94c-4452-bbc7-ba4626b63c51_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\products\\63d6f6d5-a94c-4452-bbc7-ba4626b63c51_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/products/63d6f6d5-a94c-4452-bbc7-ba4626b63c51_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\63d6f6d5-a94c-4452-bbc7-ba4626b63c51_Gemini_Generated_Image_3pu7dk3pu7dk3pu7.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\68796ce0-3e7e-4c48-a536-c46eb4c8948c_133885966830334063.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\products\\68796ce0-3e7e-4c48-a536-c46eb4c8948c_133885966830334063.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/products/68796ce0-3e7e-4c48-a536-c46eb4c8948c_133885966830334063.jpg",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\68796ce0-3e7e-4c48-a536-c46eb4c8948c_133885966830334063.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\cd47ea73-242d-4c2a-b719-ffbbe8fe4ca8_IMG-20220206-WA0037.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\products\\cd47ea73-242d-4c2a-b719-ffbbe8fe4ca8_IMG-20220206-WA0037.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/products/cd47ea73-242d-4c2a-b719-ffbbe8fe4ca8_IMG-20220206-WA0037.jpg",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\cd47ea73-242d-4c2a-b719-ffbbe8fe4ca8_IMG-20220206-WA0037.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\products\\e9f1a3d8-c31b-4d84-90ad-6cba3f2594ad_OIP.jpeg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\products\\e9f1a3d8-c31b-4d84-90ad-6cba3f2594ad_OIP.jpeg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/products/e9f1a3d8-c31b-4d84-90ad-6cba3f2594ad_OIP.jpeg",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\e9f1a3d8-c31b-4d84-90ad-6cba3f2594ad_OIP.jpeg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_136b7429-1abf-4922-8c6e-ddd20db9bb38_bulb.png",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_136b7429-1abf-4922-8c6e-ddd20db9bb38_bulb.png",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/357a04cc-e6f7-415f-9526-27c36ca18e5c_136b7429-1abf-4922-8c6e-ddd20db9bb38_bulb.png",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_136b7429-1abf-4922-8c6e-ddd20db9bb38_bulb.png"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_346cecbc-0077-4505-ba82-fbcbf29b2d72_consultation.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_346cecbc-0077-4505-ba82-fbcbf29b2d72_consultation.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/357a04cc-e6f7-415f-9526-27c36ca18e5c_346cecbc-0077-4505-ba82-fbcbf29b2d72_consultation.jpg",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_346cecbc-0077-4505-ba82-fbcbf29b2d72_consultation.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_54a01ba6-32ad-477c-a543-dda5a3e01926_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_54a01ba6-32ad-477c-a543-dda5a3e01926_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/357a04cc-e6f7-415f-9526-27c36ca18e5c_54a01ba6-32ad-477c-a543-dda5a3e01926_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_54a01ba6-32ad-477c-a543-dda5a3e01926_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_6aebd909-e3a3-49c0-a37a-f859842b1ed9_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_6aebd909-e3a3-49c0-a37a-f859842b1ed9_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/357a04cc-e6f7-415f-9526-27c36ca18e5c_6aebd909-e3a3-49c0-a37a-f859842b1ed9_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_6aebd909-e3a3-49c0-a37a-f859842b1ed9_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_75d596d6-238f-403a-97fa-428af533f3fb_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_75d596d6-238f-403a-97fa-428af533f3fb_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/357a04cc-e6f7-415f-9526-27c36ca18e5c_75d596d6-238f-403a-97fa-428af533f3fb_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_75d596d6-238f-403a-97fa-428af533f3fb_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_833ec00c-1120-4aec-9411-4c842d201b58_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_833ec00c-1120-4aec-9411-4c842d201b58_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/357a04cc-e6f7-415f-9526-27c36ca18e5c_833ec00c-1120-4aec-9411-4c842d201b58_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_833ec00c-1120-4aec-9411-4c842d201b58_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_c18363c7-eaed-44a4-9004-1592c1f5c85e_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_c18363c7-eaed-44a4-9004-1592c1f5c85e_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/357a04cc-e6f7-415f-9526-27c36ca18e5c_c18363c7-eaed-44a4-9004-1592c1f5c85e_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\357a04cc-e6f7-415f-9526-27c36ca18e5c_c18363c7-eaed-44a4-9004-1592c1f5c85e_WhatsApp Image 2025-05-08 at 12.33.07_4b4877e1.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\4971a229-ead3-4c42-8be6-0d3b84bfbd86_0592d814-f07d-4b09-81ef-db39cb5c71e5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\4971a229-ead3-4c42-8be6-0d3b84bfbd86_0592d814-f07d-4b09-81ef-db39cb5c71e5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/4971a229-ead3-4c42-8be6-0d3b84bfbd86_0592d814-f07d-4b09-81ef-db39cb5c71e5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\4971a229-ead3-4c42-8be6-0d3b84bfbd86_0592d814-f07d-4b09-81ef-db39cb5c71e5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\6a1f5927-1e22-4603-847a-9cf3797f6f87_103a62a1-97ce-4633-b1c9-320eee8f5cbe_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\6a1f5927-1e22-4603-847a-9cf3797f6f87_103a62a1-97ce-4633-b1c9-320eee8f5cbe_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/6a1f5927-1e22-4603-847a-9cf3797f6f87_103a62a1-97ce-4633-b1c9-320eee8f5cbe_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\6a1f5927-1e22-4603-847a-9cf3797f6f87_103a62a1-97ce-4633-b1c9-320eee8f5cbe_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\786dc3c2-0294-4322-b8ef-24a7c125ebb7_ece92dad-5b58-4833-b575-8388e7c00d88_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\786dc3c2-0294-4322-b8ef-24a7c125ebb7_ece92dad-5b58-4833-b575-8388e7c00d88_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/786dc3c2-0294-4322-b8ef-24a7c125ebb7_ece92dad-5b58-4833-b575-8388e7c00d88_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\786dc3c2-0294-4322-b8ef-24a7c125ebb7_ece92dad-5b58-4833-b575-8388e7c00d88_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\96a8c9a2-d83a-4b5f-b4ea-15f9a6a5e074_7baaffdf-3282-46b5-a260-ae6d6cfa52d5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\96a8c9a2-d83a-4b5f-b4ea-15f9a6a5e074_7baaffdf-3282-46b5-a260-ae6d6cfa52d5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/96a8c9a2-d83a-4b5f-b4ea-15f9a6a5e074_7baaffdf-3282-46b5-a260-ae6d6cfa52d5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\96a8c9a2-d83a-4b5f-b4ea-15f9a6a5e074_7baaffdf-3282-46b5-a260-ae6d6cfa52d5_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\images\\profiles\\ff9da01a-21da-4e9d-9eb3-63fac14463d5_f2d6a093-eba4-4e84-a375-b45c130ef517_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\images\\profiles\\ff9da01a-21da-4e9d-9eb3-63fac14463d5_f2d6a093-eba4-4e84-a375-b45c130ef517_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "images/profiles/ff9da01a-21da-4e9d-9eb3-63fac14463d5_f2d6a093-eba4-4e84-a375-b45c130ef517_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\ff9da01a-21da-4e9d-9eb3-63fac14463d5_f2d6a093-eba4-4e84-a375-b45c130ef517_WhatsApp Image 2025-05-08 at 12.33.06_ed08d4e4.jpg"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\js\\animations.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\js\\animations.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "js/animations.js",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\js\\animations.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\js\\site.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2620,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2639,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2658,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2677,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2696,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2715,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2734,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2753,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2772,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2791,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2810,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2829,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2848,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2867,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\1e5bbb1b-7b4d-4296-8233-c21d11333149_Dependency_Injection_CSharp_Guide.pdf",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\1e5bbb1b-7b4d-4296-8233-c21d11333149_Dependency_Injection_CSharp_Guide.pdf",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/investor-docs/1e5bbb1b-7b4d-4296-8233-c21d11333149_Dependency_Injection_CSharp_Guide.pdf",
       "AssetKind": "All",
@@ -2886,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\investor-docs\\1e5bbb1b-7b4d-4296-8233-c21d11333149_Dependency_Injection_CSharp_Guide.pdf"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\214919e2-d263-49dc-85b3-5ca4d35cf15a_Dependency_Injection_CSharp_Guide.pdf",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\214919e2-d263-49dc-85b3-5ca4d35cf15a_Dependency_Injection_CSharp_Guide.pdf",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/investor-docs/214919e2-d263-49dc-85b3-5ca4d35cf15a_Dependency_Injection_CSharp_Guide.pdf",
       "AssetKind": "All",
@@ -2905,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\investor-docs\\214919e2-d263-49dc-85b3-5ca4d35cf15a_Dependency_Injection_CSharp_Guide.pdf"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\4f1cb170-d3fb-4790-979d-398e3cec7e62_KogiExportHub_DevelopmentPlan.pdf",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\4f1cb170-d3fb-4790-979d-398e3cec7e62_KogiExportHub_DevelopmentPlan.pdf",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/investor-docs/4f1cb170-d3fb-4790-979d-398e3cec7e62_KogiExportHub_DevelopmentPlan.pdf",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\investor-docs\\4f1cb170-d3fb-4790-979d-398e3cec7e62_KogiExportHub_DevelopmentPlan.pdf"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\b57740c2-8c37-43b9-87b1-097bb6b4cd62_CSharp_Threading_Presentation.pdf",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\b57740c2-8c37-43b9-87b1-097bb6b4cd62_CSharp_Threading_Presentation.pdf",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/investor-docs/b57740c2-8c37-43b9-87b1-097bb6b4cd62_CSharp_Threading_Presentation.pdf",
       "AssetKind": "All",
@@ -2943,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\investor-docs\\b57740c2-8c37-43b9-87b1-097bb6b4cd62_CSharp_Threading_Presentation.pdf"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\d785c052-0007-452b-9e3c-0050555c2b17_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\d785c052-0007-452b-9e3c-0050555c2b17_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/investor-docs/d785c052-0007-452b-9e3c-0050555c2b17_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
       "AssetKind": "All",
@@ -2962,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\investor-docs\\d785c052-0007-452b-9e3c-0050555c2b17_\uD83D\uDCD8 Dependency Injection (DI) .pdf"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\dfdb6411-b81b-477f-b1de-7c563b2197de_UC-A41 Enhance Login with Indemnity Status (1).docx",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\investor-docs\\dfdb6411-b81b-477f-b1de-7c563b2197de_UC-A41 Enhance Login with Indemnity Status (1).docx",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/investor-docs/dfdb6411-b81b-477f-b1de-7c563b2197de_UC-A41 Enhance Login with Indemnity Status (1).docx",
       "AssetKind": "All",
@@ -2981,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\investor-docs\\dfdb6411-b81b-477f-b1de-7c563b2197de_UC-A41 Enhance Login with Indemnity Status (1).docx"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\opportunities\\61b8aa34-639a-4527-a1e9-db7b00d3d566_UC-A40 Update User Indemnity Status (1).docx",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\opportunities\\61b8aa34-639a-4527-a1e9-db7b00d3d566_UC-A40 Update User Indemnity Status (1).docx",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/opportunities/61b8aa34-639a-4527-a1e9-db7b00d3d566_UC-A40 Update User Indemnity Status (1).docx",
       "AssetKind": "All",
@@ -3000,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\opportunities\\61b8aa34-639a-4527-a1e9-db7b00d3d566_UC-A40 Update User Indemnity Status (1).docx"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\opportunities\\acfaf2c8-5696-491d-a129-8825e23d0861_UC-A41 Enhance Login with Indemnity Status (1).docx",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\opportunities\\acfaf2c8-5696-491d-a129-8825e23d0861_UC-A41 Enhance Login with Indemnity Status (1).docx",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/opportunities/acfaf2c8-5696-491d-a129-8825e23d0861_UC-A41 Enhance Login with Indemnity Status (1).docx",
       "AssetKind": "All",
@@ -3019,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\opportunities\\acfaf2c8-5696-491d-a129-8825e23d0861_UC-A41 Enhance Login with Indemnity Status (1).docx"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\proposals\\74a76163-da38-486b-8f99-496800898a5b_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\proposals\\74a76163-da38-486b-8f99-496800898a5b_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/proposals/74a76163-da38-486b-8f99-496800898a5b_\uD83D\uDCD8 Dependency Injection (DI) .pdf",
       "AssetKind": "All",
@@ -3038,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\proposals\\74a76163-da38-486b-8f99-496800898a5b_\uD83D\uDCD8 Dependency Injection (DI) .pdf"
     },
     {
-      "Identity": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\uploads\\proposals\\74f922cc-bdb2-40d5-9fa0-f33761db413e_hydroponics-business-plan (3).pdf",
+      "Identity": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\uploads\\proposals\\74f922cc-bdb2-40d5-9fa0-f33761db413e_hydroponics-business-plan (3).pdf",
       "SourceId": "KogiExportHub",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\USER\\OneDrive\\Desktop\\kogi_app\\KogiExportHub\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\KogiExportHub\\wwwroot\\",
       "BasePath": "_content/KogiExportHub",
       "RelativePath": "uploads/proposals/74f922cc-bdb2-40d5-9fa0-f33761db413e_hydroponics-business-plan (3).pdf",
       "AssetKind": "All",
