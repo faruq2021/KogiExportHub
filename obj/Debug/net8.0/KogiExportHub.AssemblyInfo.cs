@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KogiExportHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b22bf1ce8b473d2dffdbc5991e801d79d7fb8d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6c1be77591c7fd7b24f96f5aaf487ec7e1adb23")]
 [assembly: System.Reflection.AssemblyProductAttribute("KogiExportHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KogiExportHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
