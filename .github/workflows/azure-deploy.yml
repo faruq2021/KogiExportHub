@@ -34,5 +34,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'kogiexporthub-app'
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        publish-profile: ${{ secrets.AZURE_CREDENTIALS }}
         package: ./publish
