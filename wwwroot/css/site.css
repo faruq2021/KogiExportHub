@@ -26,7 +26,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  padding-bottom: 6rem; /* Increased significantly for forms */
+  padding-bottom: 8rem; /* Increased significantly for forms */
 }
 
 .footer {
@@ -35,74 +35,85 @@ main {
   background-color: #343a40 !important;
 }
 
-/* Enhanced mobile and general fixes */
-@media (max-width: 768px) {
-  body {
-    margin-bottom: 0;
-  }
-  
-  main {
-    padding-bottom: 8rem; /* Extra space for mobile forms */
-    min-height: calc(100vh - 200px);
-  }
-  
-  .container-fluid {
-    padding-bottom: 4rem;
-  }
-  
-  /* Ensure forms don't get hidden behind footer */
-  .form-container, .card, .modal {
-    margin-bottom: 4rem;
-  }
-  
-  /* Add extra space for form elements */
-  .btn-group, .form-group:last-child, .card:last-child {
-    margin-bottom: 4rem;
-  }
-}
-
-/* Additional fixes for all screen sizes - CRITICAL FOR FORMS */
+/* CRITICAL: Additional fixes for all screen sizes - FORMS */
 .form-container, .card, .modal, .content-wrapper {
-  margin-bottom: 4rem !important;
+  margin-bottom: 6rem !important;
 }
 
 .btn-group, .form-group:last-child, .card:last-child, .table-responsive {
-  margin-bottom: 3rem !important;
+  margin-bottom: 4rem !important;
 }
 
 /* Specific fix for registration and login forms */
 .container .card, .container-fluid .card {
-  margin-bottom: 5rem !important;
+  margin-bottom: 8rem !important;
 }
 
 /* Ensure page content has proper spacing */
 .container, .container-fluid {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
-/* Mobile-specific fixes */
+/* CONSOLIDATED Mobile fixes - NO CONFLICTS */
 @media (max-width: 768px) {
   body {
     margin-bottom: 0;
   }
   
   main {
-    padding-bottom: 3rem;
+    padding-bottom: 12rem; /* Extra space for mobile forms */
     min-height: calc(100vh - 200px);
   }
   
   .container-fluid {
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
   }
   
   /* Ensure forms don't get hidden behind footer */
   .form-container, .card, .modal {
-    margin-bottom: 2rem;
+    margin-bottom: 8rem !important;
   }
   
   /* Add extra space for form elements */
   .btn-group, .form-group:last-child, .card:last-child {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem !important;
+  }
+  
+  /* Mobile navigation enhancements */
+  .navbar-brand img {
+    max-height: 30px;
+  }
+  
+  .navbar-collapse {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Increase tap target sizes */
+  .btn, .nav-link, .form-control, select, input[type="checkbox"], input[type="radio"] {
+    min-height: 44px;
+  }
+  
+  /* Add more space between clickable elements */
+  .nav-item, .dropdown-item {
+    padding: 8px 0;
+  }
+  
+  /* Make dropdowns easier to use on touch devices */
+  .dropdown-menu {
+    padding: 8px 0;
+  }
+  
+  .dropdown-item {
+    padding: 8px 24px;
   }
 }
 
@@ -199,45 +210,6 @@ main {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Enhanced mobile navigation */
-@media (max-width: 768px) {
-  .navbar-brand img {
-    max-height: 30px;
-  }
-  
-  .navbar-collapse {
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-  
-  .navbar-nav .nav-item {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
-  
-  .navbar-nav .nav-item:last-child {
-    border-bottom: none;
-  }
-  
-  /* Increase tap target sizes */
-  .btn, .nav-link, .form-control, select, input[type="checkbox"], input[type="radio"] {
-    min-height: 44px;
-  }
-  
-  /* Add more space between clickable elements */
-  .nav-item, .dropdown-item {
-    padding: 8px 0;
-  }
-  
-  /* Make dropdowns easier to use on touch devices */
-  .dropdown-menu {
-    padding: 8px 0;
-  }
-  
-  .dropdown-item {
-    padding: 8px 24px;
-  }
 }
 
 /* Responsive images */
