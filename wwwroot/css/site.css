@@ -26,13 +26,53 @@ body {
 
 main {
   flex: 1 0 auto;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem; /* Increased from 2rem */
 }
 
 .footer {
   margin-top: auto;
   width: 100%;
   background-color: #343a40 !important;
+}
+
+/* Enhanced mobile and general fixes */
+@media (max-width: 768px) {
+  body {
+    margin-bottom: 0;
+  }
+  
+  main {
+    padding-bottom: 5rem; /* Increased for mobile */
+    min-height: calc(100vh - 200px);
+  }
+  
+  .container-fluid {
+    padding-bottom: 3rem; /* Increased */
+  }
+  
+  /* Ensure forms don't get hidden behind footer */
+  .form-container, .card, .modal {
+    margin-bottom: 3rem; /* Increased */
+  }
+  
+  /* Add extra space for form elements */
+  .btn-group, .form-group:last-child, .card:last-child {
+    margin-bottom: 3rem; /* Increased */
+  }
+}
+
+/* Additional fixes for all screen sizes */
+.form-container, .card, .modal, .content-wrapper {
+  margin-bottom: 3rem;
+}
+
+.btn-group, .form-group:last-child, .card:last-child, .table-responsive {
+  margin-bottom: 2rem;
+}
+
+/* Ensure page content has proper spacing */
+.container, .container-fluid {
+  padding-bottom: 2rem;
 }
 
 /* Mobile-specific fixes */

@@ -196,6 +196,23 @@ section {
     position: relative;
 }
 
+/* Specific category background images */
+.category-card:nth-child(1) .category-img {
+    background-image: url('/images/categories/cashew.jpg');
+}
+
+.category-card:nth-child(2) .category-img {
+    background-image: url('/images/categories/cassava.jpg');
+}
+
+.category-card:nth-child(3) .category-img {
+    background-image: url('/images/categories/limestone.jpg');
+}
+
+.category-card:nth-child(4) .category-img {
+    background-image: url('/images/categories/iron-ore.jpg');
+}
+
 .category-img::after {
     content: '';
     position: absolute;
@@ -206,13 +223,49 @@ section {
     background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
 }
 
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-card:hover .category-overlay {
+    opacity: 1;
+}
+
+.category-content {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.category-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
 .category-card h4 {
     padding: 15px;
     margin: 0;
     text-align: center;
+    background-color: white;
     font-weight: 600;
-    color: #333;
-    background-color: #fff;
 }
 
 /* Footer Enhancement */
