@@ -210,6 +210,41 @@ main {
     border-radius: 5px;
   }
   
+  /* FIX: Dropdown positioning for mobile */
+  .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ensure dropdown items are visible and properly styled */
+  .dropdown-item {
+    padding: 12px 20px;
+    color: #333 !important;
+    white-space: nowrap;
+  }
+  
+  .dropdown-item:hover, .dropdown-item:focus {
+    background-color: #f8f9fa;
+    color: #333 !important;
+  }
+  
+  /* Fix for account dropdown specifically */
+  .d-flex .dropdown {
+    width: 100%;
+  }
+  
+  .d-flex .dropdown .dropdown-menu {
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+  
   /* Increase tap target sizes */
   .btn, .nav-link, .form-control, select, input[type="checkbox"], input[type="radio"] {
     min-height: 44px;
@@ -218,15 +253,6 @@ main {
   /* Add more space between clickable elements */
   .nav-item, .dropdown-item {
     padding: 8px 0;
-  }
-  
-  /* Make dropdowns easier to use on touch devices */
-  .dropdown-menu {
-    padding: 8px 0;
-  }
-  
-  .dropdown-item {
-    padding: 8px 24px;
   }
 }
 
