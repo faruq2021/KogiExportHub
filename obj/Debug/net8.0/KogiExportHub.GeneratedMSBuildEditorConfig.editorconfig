@@ -17,339 +17,339 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KogiExportHub
 build_property.RootNamespace = KogiExportHub
-build_property.ProjectDir = C:\Users\USER\source\repos\KogiExportHub\
+build_property.ProjectDir = c:\Users\USER\source\repos\KogiExportHub\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\USER\source\repos\KogiExportHub
+build_property.MSBuildProjectDirectory = c:\Users\USER\source\repos\KogiExportHub
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/AccessDenied.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/AdminDashboard.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbkRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/ConfirmEmail.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/ForgotPassword.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/ForgotPasswordConfirmation.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/InsufficientRole.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/InsufficientRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbnN1ZmZpY2llbnRSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/InvestorManagement.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/InvestorManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbnZlc3Rvck1hbmFnZW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/Login.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/Profile.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/Register.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/RegisterConfirmation.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/ResetPassword.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/ResetPasswordConfirmation.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/ReviewInvestor.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/ReviewInvestor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXZpZXdJbnZlc3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Account/SimpleResetPassword.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Account/SimpleResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaW1wbGVSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/Dashboard.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/DeleteUser.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/DeleteUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/EditUser.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/FundingReview.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/FundingReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRnVuZGluZ1Jldmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/Index.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/InfrastructureReview.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/InfrastructureReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5mcmFzdHJ1Y3R1cmVSZXZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/InvestorManagement.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/InvestorManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW52ZXN0b3JNYW5hZ2VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/ReviewInvestor.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/ReviewInvestor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmV2aWV3SW52ZXN0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Admin/UserManagement.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Admin/UserManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlck1hbmFnZW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Cart/Checkout.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Cart/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Cart/Index.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Cart/OrderConfirmation.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Cart/OrderConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Home/Index.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Home/Privacy.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/AdminFundingReview.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/AdminFundingReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcQWRtaW5GdW5kaW5nUmV2aWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/AdminReview.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/AdminReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcQWRtaW5SZXZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/CreateFundingRequest.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/CreateFundingRequest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcQ3JlYXRlRnVuZGluZ1JlcXVlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/CreateProposal.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/CreateProposal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcQ3JlYXRlUHJvcG9zYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/Dashboard.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/EditProposal.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/EditProposal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcRWRpdFByb3Bvc2FsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/FundingRequestDetails.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/FundingRequestDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcRnVuZGluZ1JlcXVlc3REZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/FundingRequests.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/FundingRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcRnVuZGluZ1JlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/ProposalDetails.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/ProposalDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcUHJvcG9zYWxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/Proposals.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Infrastructure/Proposals.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFzdHJ1Y3R1cmVcUHJvcG9zYWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Create.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudE9wcG9ydHVuaXR5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Details.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudE9wcG9ydHVuaXR5XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Edit.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudE9wcG9ydHVuaXR5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Index.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/InvestmentOpportunity/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudE9wcG9ydHVuaXR5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Investor/Dashboard.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Investor/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0b3JcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Investor/ExpressInterest.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Investor/ExpressInterest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0b3JcRXhwcmVzc0ludGVyZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Investor/Index.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Investor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Investor/Opportunities.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Investor/Opportunities.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0b3JcT3Bwb3J0dW5pdGllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Investor/OpportunityDetails.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Investor/OpportunityDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0b3JcT3Bwb3J0dW5pdHlEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Investor/Register.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Investor/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0b3JcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Investor/RegistrationSuccess.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Investor/RegistrationSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0b3JcUmVnaXN0cmF0aW9uU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/AddProduct.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2VcQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/Checkout.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2VcQ2hlY2tvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/ProductDetails.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/ProductDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2VcUHJvZHVjdERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/ProductList.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/ProductList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2VcUHJvZHVjdExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/TransactionHistory.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Marketplace/TransactionHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2VcVHJhbnNhY3Rpb25IaXN0b3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/Activities.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/Activities.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXEFjdGl2aXRpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/Compliance.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/Compliance.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXENvbXBsaWFuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/CreateActivity.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/CreateActivity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXENyZWF0ZUFjdGl2aXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/CreateCompliance.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/CreateCompliance.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXENyZWF0ZUNvbXBsaWFuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/CreateMiner.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/CreateMiner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXENyZWF0ZU1pbmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/Dashboard.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/EditMiner.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/EditMiner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXEVkaXRNaW5lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/Index.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Mining/MinerDetails.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Mining/MinerDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWluaW5nXE1pbmVyRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Payment/ContributionSuccess.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Payment/ContributionSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxDb250cmlidXRpb25TdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Payment/Failed.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Payment/Failed.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxGYWlsZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Payment/Success.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Payment/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/SellerDashboard/Index.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/SellerDashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/SellerDashboard/Sales.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/SellerDashboard/Sales.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyRGFzaGJvYXJkXFNhbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Shared/Error.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Shared/_LoginPartial.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Taxation/CreateTaxRule.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Taxation/CreateTaxRule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4YXRpb25cQ3JlYXRlVGF4UnVsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Taxation/Dashboard.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Taxation/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4YXRpb25cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Taxation/EditTaxRule.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Taxation/EditTaxRule.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4YXRpb25cRWRpdFRheFJ1bGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Taxation/RevenueReports.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Taxation/RevenueReports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4YXRpb25cUmV2ZW51ZVJlcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Taxation/TaxRules.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Taxation/TaxRules.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGF4YXRpb25cVGF4UnVsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Transaction/Details.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Transaction/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Transaction/History.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Transaction/History.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cSGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/_ViewImports.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/_ViewStart.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/USER/source/repos/KogiExportHub/Views/Shared/_Layout.cshtml]
+[c:/Users/USER/source/repos/KogiExportHub/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hont9g14mp

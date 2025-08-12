@@ -129,6 +129,7 @@ main {
 }
 
 /* Mobile optimizations with extra form spacing */
+/* Mobile navigation fixes */
 @media (max-width: 768px) {
   body {
     padding-bottom: 350px; /* More space on mobile */
@@ -185,6 +186,28 @@ main {
   
   .navbar-nav .nav-item:last-child {
     border-bottom: none;
+  }
+  
+  /* FIX: Make hamburger menu visible on dark background */
+  .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 4px 8px;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  /* Ensure nav links are visible when menu is open */
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
   }
   
   /* Increase tap target sizes */
