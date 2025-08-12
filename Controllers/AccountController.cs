@@ -259,6 +259,8 @@ namespace KogiExportHub.Controllers
             userProfile.PhoneNumber = model.PhoneNumber;
             userProfile.UpdatedAt = DateTime.Now;
     
+            bool profilePictureUpdated = false;
+            
             // Handle profile picture upload
             if (model.ProfilePicture != null)
             {
@@ -281,6 +283,7 @@ namespace KogiExportHub.Controllers
     
                 // Update profile picture URL
                 userProfile.ProfilePictureUrl = $"/images/profiles/{uniqueFileName}";
+                profilePictureUpdated = true;
             }
             else
             {
@@ -291,9 +294,20 @@ namespace KogiExportHub.Controllers
             _context.Update(userProfile);
             await _context.SaveChangesAsync();
     
+            // Add success message based on what was updated
+            if (profilePictureUpdated)
+            {
+                TempData["SuccessMessage"] = "Profile and profile picture updated successfully!";
+            }
+            else
+            {
+                TempData["SuccessMessage"] = "Profile updated successfully!";
+            }
+    
             return RedirectToAction(nameof(Profile));
         }
 
+        // POST: /Account/UpdateProfilePicture
         // POST: /Account/UpdateProfilePicture
         [HttpPost]
         [ValidateAntiForgeryToken]
